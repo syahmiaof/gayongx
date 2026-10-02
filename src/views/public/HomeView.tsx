@@ -61,9 +61,9 @@ export function HomeView({
             <h1>
               MEMARTABATKAN
               <br />
-              <em>WARISAN SILAT SENI</em>
+              <em>WARISAN SILAT SENI GAYONG</em>
               <br />
-              GAYONG DI BUMI
+              DI BUMI
               <br />
               BERDAULAT PERAK
             </h1>
