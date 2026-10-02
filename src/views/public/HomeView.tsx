@@ -58,7 +58,7 @@ export function HomeView({
         <div className="public-container hero-content">
           <div className="hero-copy">
             <div className="eyebrow">SILAT · SENI · WARISAN · JATI DIRI</div>
-            <h1>
+            <h1 className="whitespace-normal" style={{ whiteSpace: "normal" }}>
               MEMARTABATKAN
               <br />
               <em>WARISAN SILAT SENI GAYONG</em>
