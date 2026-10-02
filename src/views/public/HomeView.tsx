@@ -63,9 +63,7 @@ export function HomeView({
               <br />
               <em>WARISAN SILAT SENI GAYONG</em>
               <br />
-              DI BUMI
-              <br />
-              BERDAULAT PERAK
+              DI BUMI BERDAULAT PERAK
             </h1>
             <p>
               Ekosistem digital rasmi bagi menyelaras keabsahan cawangan,
