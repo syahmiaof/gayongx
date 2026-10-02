@@ -1,0 +1,2528 @@
+@media (min-width: 1600px) {
+  .public-nav {
+    height: 101px;
+  }
+  .public-hero {
+    height: 405px;
+  }
+  .hero-copy h1 {
+    font-size: 48px;
+  }
+  .hero-copy p {
+    font-size: 15px;
+    max-width: 490px;
+  }
+  .heritage-section {
+    height: 206px;
+  }
+  .ecosystem-section {
+    height: 139px;
+  }
+  .verification-card {
+    width: 363px;
+  }
+  .hero-copy {
+    width: 640px;
+  }
+  .heritage-card {
+    height: 180px;
+  }
+  .heritage-copy h2 {
+    font-size: 23px;
+  }
+  .heritage-copy p {
+    font-size: 12px;
+  }
+  .member-shell {
+    --sidebar: 290px;
+  }
+  .admin-shell {
+    --sidebar: 226px;
+  }
+  .admin-hero {
+    height: 197px;
+  }
+  .admin-hero h2 {
+    font-size: 48px;
+  }
+  .admin-metrics .metric-card {
+    height: 90px;
+  }
+  .chart-wrap {
+    height: 181px;
+  }
+  .distribution-content,
+  .map-content {
+    height: 193px;
+  }
+  .admin-dashboard .panel-header {
+    min-height: 36px;
+  }
+  .admin-tables td {
+    padding: 6px 5px;
+  }
+  .admin-shell .dashboard-sidebar nav button {
+    height: 40px;
+  }
+}
+@media (max-width: 1450px) {
+  .public-nav > .public-container {
+    gap: 18px;
+  }
+  .public-nav nav {
+    gap: 11px;
+  }
+  .public-nav nav button {
+    font-size: 11px;
+  }
+  .brand-lg img {
+    width: 74px;
+  }
+  .brand-lg .brand-copy strong {
+    font-size: 12px;
+  }
+  .brand-lg .brand-copy b {
+    font-size: 9px;
+  }
+  .nav-join {
+    padding: 10px 16px;
+  }
+  .member-shell {
+    --sidebar: 248px;
+  }
+  .member-welcome {
+    gap: 24px;
+  }
+  .member-avatar {
+    width: 164px;
+    height: 164px;
+  }
+  .welcome-copy h2 {
+    font-size: 25px;
+  }
+  .welcome-copy dl {
+    gap: 18px;
+    font-size: 10px;
+  }
+  .heritage-script {
+    font-size: 28px;
+    right: 0;
+  }
+  .dashboard-topbar {
+    gap: 16px;
+  }
+  .dashboard-title p {
+    font-size: 10px;
+  }
+  .site-search {
+    width: 225px;
+  }
+  .program-row > img {
+    width: 65px;
+  }
+  .member-lower-grid {
+    grid-template-columns: 1.45fr 1fr;
+  }
+  .program-row {
+    gap: 8px;
+  }
+  .program-info h3 {
+    font-size: 10px;
+  }
+  .program-info p {
+    font-size: 9px;
+  }
+  .register-button {
+    padding: 5px;
+  }
+  .admin-shell .dashboard-topbar {
+    gap: 13px;
+    padding: 0 18px;
+  }
+  .admin-shell .dashboard-title h1 {
+    font-size: 16px;
+  }
+  .admin-shell .site-search {
+    width: 255px;
+  }
+  .admin-shell .dashboard-title > span {
+    font-size: 9px;
+  }
+  .metric-card {
+    gap: 9px;
+    padding: 10px;
+  }
+  .metric-icon {
+    width: 45px;
+    height: 49px;
+  }
+  .metric-card h3 {
+    font-size: 9px;
+  }
+  .metric-card b {
+    font-size: 23px;
+  }
+  .metric-card > div > div {
+    gap: 8px;
+  }
+  .admin-shell .account-menu {
+    padding-left: 12px;
+  }
+  .map-labels span {
+    font-size: 7px;
+    padding: 4px;
+  }
+  .map-content {
+    gap: 3px;
+    padding: 0 6px;
+  }
+  .map-content > img {
+    width: 88px;
+  }
+  .map-stats {
+    min-width: 77px;
+    padding: 7px;
+  }
+  .chart-legend > div {
+    font-size: 7px;
+  }
+  .panel select {
+    font-size: 7px;
+    max-width: 105px;
+  }
+  .admin-dashboard .panel-header h2 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1280px) {
+  .public-container {
+    width: 93%;
+  }
+  .public-nav > .public-container {
+    gap: 13px;
+  }
+  .public-nav .brand-copy small {
+    font-size: 7px;
+  }
+  .public-nav nav {
+    gap: 9px;
+  }
+  .public-nav nav button {
+    font-size: 10px;
+  }
+  .public-nav .brand {
+    gap: 9px;
+  }
+  .brand-lg img {
+    width: 60px;
+  }
+  .nav-join {
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+  .search-toggle {
+    width: 35px;
+    height: 35px;
+  }
+  .hero-copy h1 {
+    font-size: 40px;
+  }
+  .verification-card {
+    width: 305px;
+  }
+  .heritage-grid {
+    grid-template-columns: 1.2fr 1fr 0.85fr 0.85fr;
+  }
+  .heritage-card {
+    padding: 16px;
+  }
+  .heritage-copy h2 {
+    font-size: 20px;
+  }
+  .module {
+    gap: 10px;
+    padding: 10px;
+  }
+  .ecosystem-modules {
+    gap: 12px;
+  }
+  .module small {
+    font-size: 8px;
+  }
+  .utility-motto {
+    font-size: 8px;
+  }
+  .member-shell {
+    --sidebar: 225px;
+  }
+  .dashboard-sidebar .brand-copy strong {
+    font-size: 10px;
+  }
+  .dashboard-sidebar .brand-copy b {
+    font-size: 8px;
+  }
+  .dashboard-sidebar .brand-copy small {
+    font-size: 7px;
+  }
+  .dashboard-sidebar .brand img {
+    width: 48px;
+    height: 65px;
+  }
+  .dashboard-sidebar nav button {
+    font-size: 12px;
+    gap: 13px;
+  }
+  .dashboard-title h1 {
+    font-size: 16px;
+  }
+  .dashboard-topbar {
+    padding: 0 18px;
+    gap: 13px;
+  }
+  .account-menu > button > span {
+    display: none;
+  }
+  .site-search {
+    width: 220px;
+  }
+  .dashboard-main {
+    padding: 0 17px 10px;
+  }
+  .member-welcome {
+    height: 205px;
+    gap: 21px;
+  }
+  .member-avatar {
+    width: 145px;
+    height: 145px;
+  }
+  .welcome-copy dl {
+    gap: 13px;
+    flex-wrap: wrap;
+    max-width: 570px;
+  }
+  .welcome-copy h2 {
+    font-size: 25px;
+  }
+  .heritage-script {
+    display: none;
+  }
+  .summary-card {
+    padding: 12px;
+    gap: 9px;
+    height: 130px;
+  }
+  .summary-card > svg {
+    width: 30px;
+    height: 34px;
+    padding: 8px;
+  }
+  .summary-card h3 {
+    font-size: 15px;
+  }
+  .summary-card small {
+    font-size: 9px;
+  }
+  .summary-card p {
+    font-size: 10px;
+  }
+  .summary-card > .belt-graphic {
+    width: 75px;
+  }
+  .certificate-stack {
+    gap: 3px;
+    right: 8px;
+  }
+  .certificate-stack > span {
+    width: 20px;
+    height: 36px;
+  }
+  .avatar-stack {
+    right: 10px;
+  }
+  .member-content-grid {
+    grid-template-columns: minmax(0, 2.4fr) minmax(250px, 1fr);
+    gap: 10px;
+  }
+  .panel-header h2 {
+    font-size: 12px;
+  }
+  .belt-grid {
+    gap: 7px;
+    padding: 0 9px 12px;
+  }
+  .belt-card strong {
+    font-size: 8px;
+  }
+  .belt-card {
+    height: 155px;
+    padding-top: 9px;
+  }
+  .belt-card span,
+  .belt-card small {
+    font-size: 8px;
+  }
+  .member-lower-grid {
+    grid-template-columns: 1.3fr 1fr;
+  }
+  .program-row > img {
+    display: none;
+  }
+  .date-tile {
+    width: 42px;
+    height: 57px;
+  }
+  .program-info h3 {
+    font-size: 10px;
+  }
+  .program-row {
+    margin: 0 10px;
+  }
+  .announcement-row {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+    gap: 8px;
+  }
+  .announcement-row b {
+    font-size: 9px;
+  }
+  .announcement-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .physical-card {
+    margin: 0 10px;
+    padding: 12px 10px 8px;
+  }
+  .card-details {
+    grid-template-columns: 1fr 50px;
+  }
+  .card-photo,
+  .demo-qr {
+    width: 50px;
+  }
+  .card-photo {
+    height: 61px;
+  }
+  .demo-qr {
+    height: 50px;
+  }
+  .card-details h3 {
+    font-size: 11px;
+  }
+  .card-brand .brand-copy strong {
+    font-size: 6px;
+  }
+  .admin-shell {
+    --sidebar: 190px;
+  }
+  .admin-shell .dashboard-sidebar > .brand-link {
+    padding: 10px;
+  }
+  .admin-shell .brand {
+    gap: 7px;
+  }
+  .admin-shell .brand-copy strong {
+    font-size: 8px;
+  }
+  .admin-shell .brand img {
+    width: 48px;
+  }
+  .admin-shell .dashboard-title > span {
+    display: none;
+  }
+  .admin-shell .site-search {
+    width: 250px;
+  }
+  .topbar-date {
+    padding-left: 12px;
+  }
+  .metric-card {
+    gap: 7px;
+    padding: 8px;
+  }
+  .metric-icon {
+    width: 35px;
+    height: 43px;
+  }
+  .metric-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  .metric-card h3 {
+    font-size: 8px;
+  }
+  .metric-card b {
+    font-size: 21px;
+  }
+  .metric-card > div > div span {
+    font-size: 8px;
+  }
+  .admin-dashboard .panel-header {
+    flex-wrap: wrap;
+    min-height: 45px;
+    align-content: center;
+  }
+  .analytics-grid {
+    grid-template-columns: 1.1fr 1fr 1fr;
+  }
+  .chart-legend > div {
+    margin-bottom: 5px;
+  }
+  .distribution-content {
+    gap: 5px;
+    padding: 6px;
+  }
+  .map-labels {
+    display: none;
+  }
+  .map-content > img {
+    width: 110px;
+  }
+  .admin-lower-grid {
+    grid-template-columns: 3fr 1fr;
+  }
+  .admin-tables {
+    grid-template-columns: 1.2fr 1fr;
+  }
+  .admin-tables table {
+    font-size: 7px;
+  }
+  .admin-tables th {
+    font-size: 6px;
+  }
+  .table-status {
+    font-size: 7px;
+    padding: 3px 5px;
+  }
+  .quick-actions > div {
+    gap: 5px;
+  }
+  .quick-actions > div > button {
+    gap: 5px;
+    padding: 5px;
+  }
+  .quick-actions > div > button > svg {
+    width: 24px;
+    height: 30px;
+  }
+  .quick-actions b {
+    font-size: 7px;
+    white-space: normal;
+  }
+  .quick-actions small {
+    font-size: 6px;
+  }
+  .compact .program-row {
+    gap: 6px;
+  }
+  .compact .program-info h3 {
+    font-size: 8px;
+  }
+  .admin-hero h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1100px) {
+  .public-nav nav {
+    display: none;
+  }
+  .public-nav .mobile-menu {
+    display: flex;
+    margin-left: 0;
+  }
+  .public-nav nav.is-open {
+    display: flex;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    background: #0d1317;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 25px;
+    border-bottom: 1px solid #fff3;
+  }
+  .public-nav nav button {
+    font-size: 13px;
+  }
+  .public-nav .search-toggle {
+    margin-left: auto;
+  }
+  .hero-copy h1 {
+    font-size: 35px;
+  }
+  .hero-copy {
+    max-width: 65%;
+  }
+  .hero-copy p {
+    font-size: 12px;
+    max-width: 390px;
+  }
+  .verification-card {
+    width: 280px;
+    padding: 14px;
+  }
+  .brand-xl img {
+    height: 115px;
+  }
+  .brand-xl .brand-copy strong {
+    font-size: 16px;
+  }
+  .brand-xl .brand-copy small {
+    font-size: 10px;
+  }
+  .hero-actions {
+    gap: 10px;
+  }
+  .hero-actions .button {
+    min-width: 175px;
+    padding: 10px 14px;
+  }
+  .heritage-grid {
+    grid-template-columns: 1.25fr 0.55fr 1fr 1fr;
+  }
+  .heritage-caption {
+    display: none;
+  }
+  .heritage-card h3 {
+    font-size: 11px;
+  }
+  .heritage-card p {
+    font-size: 9px;
+  }
+  .heritage-copy p {
+    font-size: 10px;
+  }
+  .heritage-copy h2 {
+    font-size: 19px;
+  }
+  .heritage-card.green {
+    grid-column: 3;
+  }
+  .ecosystem-section header p {
+    display: none;
+  }
+  .module-icon {
+    width: 33px;
+    height: 33px;
+  }
+  .module-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+  .footer-links {
+    gap: 7px;
+  }
+  .public-footer .brand-copy strong {
+    font-size: 7px;
+  }
+  .public-footer .brand-copy small {
+    font-size: 6px;
+  }
+  .public-footer .brand-copy b {
+    font-size: 7px;
+  }
+  .public-footer small {
+    font-size: 7px;
+  }
+  .member-shell {
+    --sidebar: 205px;
+  }
+  .dashboard-sidebar nav button {
+    font-size: 11px;
+    height: 40px;
+    padding: 0 10px;
+  }
+  .dashboard-sidebar > .brand-link {
+    padding: 15px 10px;
+  }
+  .member-avatar {
+    width: 125px;
+    height: 125px;
+  }
+  .welcome-copy h2 {
+    font-size: 23px;
+  }
+  .welcome-copy dl {
+    max-width: 470px;
+    gap: 9px 20px;
+  }
+  .member-summary {
+    gap: 8px;
+  }
+  .summary-card h3 {
+    font-size: 13px;
+  }
+  .summary-card small {
+    font-size: 8px;
+  }
+  .summary-card > svg {
+    width: 25px;
+    height: 28px;
+    padding: 6px;
+  }
+  .summary-card > .belt-graphic {
+    width: 68px;
+    bottom: 0;
+    right: 1px;
+  }
+  .summary-card .button {
+    font-size: 9px;
+    left: 9px;
+    right: 9px;
+  }
+  .member-content-grid {
+    grid-template-columns: minmax(0, 1fr) 245px;
+  }
+  .member-lower-grid {
+    grid-template-columns: 1fr;
+  }
+  .belt-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .belt-card {
+    height: 135px;
+  }
+  .belt-card strong {
+    font-size: 10px;
+  }
+  .belt-graphic {
+    height: 45px;
+  }
+  .belt-status {
+    margin-bottom: 7px;
+  }
+  .member-summary .avatar-stack,
+  .certificate-stack {
+    display: none;
+  }
+  .account-menu img {
+    width: 32px;
+    height: 32px;
+  }
+  .dashboard-topbar .site-search {
+    width: 180px;
+  }
+  .dashboard-title p {
+    font-size: 8px;
+  }
+  .dashboard-title h1 {
+    font-size: 15px;
+  }
+  .admin-shell .dashboard-topbar .site-search {
+    width: 230px;
+  }
+  .topbar-date {
+    display: none;
+  }
+  .admin-metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .metric-card h3 {
+    font-size: 11px;
+  }
+  .metric-card b {
+    font-size: 24px;
+  }
+  .metric-icon {
+    width: 48px;
+  }
+  .analytics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .map-panel {
+    grid-column: 1/-1;
+  }
+  .map-content {
+    height: 180px;
+    gap: 25px;
+  }
+  .map-labels {
+    display: flex;
+  }
+  .map-labels span {
+    font-size: 10px;
+  }
+  .map-stats {
+    padding: 10px 30px;
+  }
+  .map-stats small {
+    font-size: 9px;
+  }
+  .admin-lower-grid {
+    grid-template-columns: 1fr;
+  }
+  .admin-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .admin-tables table {
+    font-size: 8px;
+  }
+  .quick-actions b {
+    font-size: 9px;
+  }
+  .quick-actions small {
+    font-size: 8px;
+  }
+  .admin-shell .dashboard-title h1 {
+    font-size: 17px;
+  }
+  .admin-hero h2 {
+    font-size: 37px;
+  }
+  .admin-hero {
+    padding-left: 20px;
+  }
+  .admin-hero > div > p:last-child {
+    font-size: 11px;
+  }
+  .admin-hero aside {
+    font-size: 10px;
+  }
+  .admin-shell .sidebar-heritage {
+    top: 650px;
+  }
+}
+@media (max-width: 800px) {
+  .utility-motto {
+    display: none;
+  }
+  .utility-bar .public-container > div {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .utility-bar small {
+    font-size: 7px;
+  }
+  .utility-bar button {
+    font-size: 9px;
+    padding-left: 10px;
+  }
+  .public-hero {
+    height: auto;
+    min-height: 390px;
+  }
+  .hero-copy {
+    max-width: none;
+    width: 100%;
+  }
+  .hero-copy h1 {
+    font-size: 36px;
+  }
+  .hero-content {
+    padding: 30px 0;
+  }
+  .verification-card {
+    width: 245px;
+  }
+  .hero-copy p {
+    max-width: 360px;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+  .hero-actions .button {
+    min-width: 160px;
+    font-size: 11px;
+  }
+  .brand-xl .brand-copy strong {
+    font-size: 14px;
+  }
+  .brand-xl .brand-copy b {
+    font-size: 10px;
+  }
+  .verified-panel {
+    padding: 11px;
+    gap: 10px;
+  }
+  .verified-panel b {
+    font-size: 8px;
+  }
+  .verified-panel p {
+    font-size: 9px;
+  }
+  .heritage-section {
+    height: auto;
+    min-height: 350px;
+  }
+  .heritage-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    padding: 20px 0;
+  }
+  .heritage-copy {
+    grid-column: 1/-1;
+    max-width: 340px;
+  }
+  .heritage-card.green {
+    grid-column: auto;
+  }
+  .heritage-card {
+    height: 150px;
+  }
+  .heritage-art {
+    background-position:
+      center,
+      right top;
+    background-size:
+      cover,
+      auto 52%;
+  }
+  .heritage-card h3 {
+    font-size: 13px;
+  }
+  .heritage-card p {
+    font-size: 11px;
+  }
+  .ecosystem-section {
+    height: auto;
+  }
+  .ecosystem-modules {
+    grid-template-columns: 1fr 1fr;
+  }
+  .module {
+    height: 80px;
+  }
+  .module small {
+    font-size: 10px;
+  }
+  .module b {
+    font-size: 12px;
+  }
+  .public-footer > .public-container {
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
+  .public-footer .brand-copy strong {
+    font-size: 9px;
+  }
+  .footer-links {
+    font-size: 10px;
+    order: 4;
+    width: 100%;
+  }
+  .public-footer small {
+    font-size: 9px;
+  }
+  .dashboard-sidebar {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    width: 260px;
+    overflow-y: auto;
+    min-height: 100vh;
+    z-index: 80;
+  }
+  .dashboard-sidebar.is-open {
+    transform: translateX(0);
+  }
+  .dashboard-workspace {
+    margin-left: 0;
+  }
+  .sidebar-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 70;
+    background: #0009;
+    width: 100%;
+  }
+  .sidebar-close {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    background: #10191d;
+  }
+  .dashboard-sidebar > .brand-link {
+    padding: 15px;
+  }
+  .dashboard-sidebar .brand img {
+    width: 65px;
+  }
+  .dashboard-sidebar .brand-copy strong {
+    font-size: 11px;
+  }
+  .dashboard-sidebar .brand-copy small {
+    font-size: 8px;
+  }
+  .dashboard-sidebar nav button {
+    font-size: 14px;
+    height: 40px;
+  }
+  .admin-shell .dashboard-sidebar {
+    width: 235px;
+  }
+  .admin-shell .dashboard-sidebar > .brand-link {
+    padding: 10px 15px;
+  }
+  .admin-shell .brand img {
+    width: 58px;
+  }
+  .admin-shell .brand-copy strong {
+    font-size: 10px;
+  }
+  .admin-shell .sidebar-toggle {
+    display: flex;
+  }
+  .admin-shell .dashboard-sidebar nav button {
+    font-size: 13px;
+  }
+  .dashboard-topbar {
+    height: 70px;
+  }
+  .dashboard-title h1 {
+    font-size: 16px;
+  }
+  .dashboard-title p {
+    font-size: 10px;
+  }
+  .member-welcome {
+    height: 195px;
+  }
+  .member-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .summary-card h3 {
+    font-size: 18px;
+  }
+  .summary-card small {
+    font-size: 11px;
+  }
+  .summary-card > svg {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+  }
+  .summary-card .button {
+    font-size: 11px;
+  }
+  .summary-card > .belt-graphic {
+    width: 90px;
+    height: 85px;
+    bottom: 10px;
+    right: 12px;
+  }
+  .certificate-stack,
+  .member-summary .avatar-stack {
+    display: flex;
+  }
+  .member-content-grid {
+    grid-template-columns: 1.6fr 1fr;
+  }
+  .belt-card {
+    height: 137px;
+  }
+  .admin-shell .dashboard-topbar {
+    gap: 15px;
+  }
+  .admin-shell .dashboard-title h1 {
+    font-size: 16px;
+  }
+  .admin-shell .dashboard-title p {
+    font-size: 9px;
+  }
+  .admin-shell .dashboard-topbar .site-search {
+    width: 220px;
+  }
+  .admin-shell .account-menu {
+    border: 0;
+    padding: 0;
+  }
+  .admin-hero {
+    height: 180px;
+  }
+  .admin-hero h2 {
+    font-size: 38px;
+  }
+  .admin-shell .dashboard-footer {
+    font-size: 7px;
+  }
+  .dashboard-footer {
+    font-size: 7px;
+  }
+  .brand-xl img {
+    width: 100px;
+    height: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .public-container {
+    width: 90%;
+  }
+  .utility-bar {
+    height: 31px;
+  }
+  .utility-bar small {
+    display: none;
+  }
+  .utility-bar button {
+    border: 0;
+    padding: 0;
+    font-size: 8px;
+  }
+  .utility-bar button svg {
+    width: 11px;
+  }
+  .public-nav {
+    height: 80px;
+  }
+  .public-nav .brand-lg img {
+    width: 48px;
+    height: 60px;
+  }
+  .public-nav .brand-lg .brand-copy strong {
+    font-size: 9px;
+  }
+  .public-nav .brand-lg .brand-copy b {
+    font-size: 7px;
+  }
+  .public-nav .brand-lg .brand-copy small {
+    font-size: 6px;
+  }
+  .public-nav > .public-container {
+    gap: 8px;
+  }
+  .nav-join {
+    display: none;
+  }
+  .public-nav .search-toggle {
+    width: 31px;
+    height: 31px;
+  }
+  .public-nav nav.is-open {
+    top: 80px;
+    gap: 12px 23px;
+  }
+  .public-nav nav button {
+    padding: 8px 0;
+  }
+  .public-search {
+    right: 5%;
+    width: 90%;
+    top: 75px;
+  }
+  .public-search .site-search {
+    width: 100%;
+  }
+  .hero-content {
+    display: block;
+    padding: 27px 0 24px;
+  }
+  .hero-copy h1 {
+    font-size: clamp(27px, 7.5vw, 40px);
+    letter-spacing: -0.6px;
+    line-height: 1.08;
+    margin: 12px 0 16px;
+  }
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1px;
+    gap: 8px;
+  }
+  .eyebrow:before {
+    width: 22px;
+  }
+  .hero-copy p {
+    font-size: 12px;
+    max-width: 335px;
+  }
+  .hero-actions {
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+  }
+  .hero-actions .button {
+    min-width: 0;
+    flex: 1;
+    padding: 10px 8px;
+    gap: 7px;
+    font-size: 10px;
+    min-height: 41px;
+  }
+  .hero-actions .button svg {
+    width: 15px;
+  }
+  .hero-art {
+    background-image:
+      linear-gradient(90deg, #050607c9, #05060766),
+      url("/images/reference/hero-perak-demo.png");
+    background-size:
+      cover,
+      auto 70%;
+    background-position:
+      center,
+      center top;
+  }
+  .verification-card {
+    width: 100%;
+    margin-top: 26px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .verification-card .brand {
+    gap: 8px;
+    width: 48%;
+  }
+  .verification-card .brand img {
+    width: 65px;
+    height: 77px;
+  }
+  .verification-card .brand-copy {
+    gap: 4px;
+    white-space: normal;
+  }
+  .verification-card .brand-copy strong {
+    font-size: 11px;
+  }
+  .verification-card .brand-copy b {
+    font-size: 8px;
+  }
+  .verification-card .brand-copy small {
+    font-size: 7px;
+    white-space: nowrap;
+  }
+  .verified-panel {
+    width: 52%;
+    margin: 0;
+    display: block;
+    padding: 12px;
+  }
+  .verified-check {
+    width: 23px;
+    height: 23px;
+    margin: 0 0 7px;
+  }
+  .verified-check svg {
+    width: 16px;
+  }
+  .verified-panel b {
+    font-size: 8px;
+    letter-spacing: 0;
+  }
+  .verified-panel p {
+    font-size: 9px;
+    line-height: 1.4;
+  }
+  .public-hero:after {
+    inset: 48% 0 0 50%;
+    opacity: 0.3;
+  }
+  .heritage-grid {
+    padding: 23px 0;
+    gap: 12px;
+  }
+  .heritage-copy {
+    max-width: 95%;
+    padding-bottom: 10px;
+  }
+  .heritage-copy h2 {
+    font-size: 23px;
+  }
+  .heritage-copy p {
+    font-size: 11px;
+    max-width: 315px;
+  }
+  .heritage-art {
+    background-size:
+      cover,
+      auto 55%;
+    background-position:
+      center,
+      center top;
+    background-image:
+      linear-gradient(90deg, #080e12e8, #080e1299),
+      url("/images/reference/air-kuning-demo.png");
+  }
+  .heritage-card {
+    padding: 15px;
+    height: 182px;
+  }
+  .heritage-card h3 {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  .heritage-card p {
+    font-size: 10px;
+    width: 100%;
+  }
+  .heritage-card > svg:first-child {
+    width: 25px;
+    height: 25px;
+  }
+  .round-arrow {
+    width: 23px !important;
+    height: 23px !important;
+    right: 10px;
+    bottom: 10px;
+  }
+  .ecosystem-section {
+    padding: 20px 0;
+  }
+  .ecosystem-section header {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .ecosystem-section h2 {
+    font-size: 9px;
+    letter-spacing: 0.8px;
+    gap: 8px;
+  }
+  .ecosystem-section h2:before {
+    width: 20px;
+  }
+  .ecosystem-section header a {
+    font-size: 9px;
+    margin-top: 10px;
+  }
+  .ecosystem-modules {
+    gap: 10px;
+  }
+  .module {
+    padding: 12px;
+    gap: 10px;
+    height: 125px;
+    position: relative;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .module-icon {
+    width: 29px;
+    height: 29px;
+  }
+  .module-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .module > span:nth-child(2) {
+    flex-basis: 100%;
+  }
+  .module b {
+    font-size: 10px;
+  }
+  .module small {
+    font-size: 9px;
+  }
+  .module > svg {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+  }
+  .public-footer > .public-container {
+    gap: 15px;
+  }
+  .public-footer .brand {
+    width: 100%;
+    gap: 12px;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    font-size: 9px;
+    gap: 9px;
+  }
+  .public-footer small {
+    font-size: 8px;
+  }
+  .social-links {
+    margin-right: auto;
+  }
+  .dashboard-topbar {
+    gap: 12px;
+    padding: 0 15px;
+    height: 66px;
+  }
+  .dashboard-title h1 {
+    font-size: 15px;
+  }
+  .dashboard-title p {
+    font-size: 8px;
+    white-space: normal;
+    max-width: 200px;
+    line-height: 1.4;
+  }
+  .dashboard-topbar > .site-search {
+    display: none;
+  }
+  .account-menu > button {
+    gap: 3px;
+  }
+  .account-menu img {
+    width: 29px;
+    height: 29px;
+  }
+  .account-menu > button > svg {
+    display: none;
+  }
+  .notification-button {
+    padding: 3px;
+  }
+  .notification-button svg {
+    width: 19px;
+  }
+  .notification-button b {
+    right: -5px;
+    top: -7px;
+  }
+  .dashboard-main {
+    padding: 0 14px 16px;
+  }
+  .member-welcome {
+    height: auto;
+    padding: 24px 0 20px;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  .member-avatar {
+    width: 80px;
+    height: 80px;
+    border-width: 3px;
+  }
+  .welcome-copy {
+    flex: 1;
+    min-width: 0;
+  }
+  .welcome-copy > p {
+    font-size: 11px;
+  }
+  .welcome-copy h2 {
+    font-size: 19px;
+    line-height: 1.2;
+    max-width: 240px;
+  }
+  .member-badges {
+    margin: 8px 0 20px;
+  }
+  .member-badges span {
+    font-size: 9px;
+    padding: 2px 9px;
+  }
+  .welcome-copy dl {
+    margin-left: -95px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 8px;
+    font-size: 9px;
+  }
+  .welcome-copy dd {
+    white-space: normal;
+    font-size: 10px;
+  }
+  .welcome-copy dt {
+    font-size: 9px;
+  }
+  .member-summary {
+    gap: 9px;
+    margin-bottom: 12px;
+  }
+  .summary-card {
+    height: 141px;
+    padding: 12px 10px;
+    gap: 7px;
+  }
+  .summary-card > svg {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+  }
+  .summary-card small {
+    font-size: 9px;
+    line-height: 1.3;
+    display: block;
+    max-width: 100px;
+  }
+  .summary-card h3 {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: 6px;
+  }
+  .summary-card p {
+    font-size: 9px;
+  }
+  .summary-card .button {
+    font-size: 9px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 5px;
+    gap: 5px;
+    min-height: 29px;
+  }
+  .summary-card > .belt-graphic {
+    width: 68px;
+    height: 50px;
+    right: 8px;
+    bottom: 5px;
+  }
+  .summary-card.emerald p {
+    max-width: 85px;
+  }
+  .certificate-stack,
+  .member-summary .avatar-stack {
+    display: none;
+  }
+  .member-content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .member-primary,
+  .member-secondary {
+    display: contents;
+  }
+  .journey-panel {
+    order: 1;
+  }
+  .digital-card-panel {
+    order: 2;
+  }
+  .member-lower-grid {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .activity-panel {
+    order: 4;
+  }
+  .panel-header {
+    padding: 14px 12px 10px;
+  }
+  .panel-header h2 {
+    font-size: 13px;
+  }
+  .journey-panel .more-link {
+    font-size: 8px;
+    padding: 6px 8px;
+  }
+  .panel-subtitle {
+    margin: 3px 12px 13px;
+    font-size: 9px;
+  }
+  .belt-grid {
+    padding: 0 11px 12px;
+    gap: 8px;
+  }
+  .belt-card {
+    height: 146px;
+    padding-top: 14px;
+  }
+  .belt-card strong {
+    font-size: 9px;
+  }
+  .belt-graphic {
+    height: 49px;
+  }
+  .belt-card span,
+  .belt-card small {
+    font-size: 9px;
+  }
+  .belt-status {
+    margin: 6px 0 9px;
+  }
+  .physical-card {
+    max-width: 370px;
+    margin: 0 14px;
+    padding: 14px 18px 12px;
+  }
+  .card-brand .brand-copy strong {
+    font-size: 8px;
+  }
+  .card-brand .brand-copy b {
+    font-size: 7px;
+  }
+  .card-brand .brand img {
+    width: 45px;
+    height: 53px;
+  }
+  .card-details {
+    grid-template-columns: 1fr 70px;
+  }
+  .card-photo {
+    width: 70px;
+    height: 80px;
+  }
+  .demo-qr {
+    width: 70px;
+    height: 70px;
+  }
+  .card-details h3 {
+    font-size: 14px;
+  }
+  .card-details b,
+  .card-details strong {
+    font-size: 11px;
+  }
+  .card-details p {
+    font-size: 10px;
+  }
+  .card-details small {
+    font-size: 8px;
+  }
+  .card-buttons {
+    padding: 13px 14px;
+  }
+  .card-buttons button {
+    font-size: 11px !important;
+    min-height: 35px !important;
+  }
+  .program-row > img {
+    display: block;
+    width: 65px;
+    height: 58px;
+  }
+  .program-row {
+    margin: 0 12px;
+    gap: 9px;
+    padding: 9px 0;
+  }
+  .program-info h3 {
+    font-size: 10px;
+  }
+  .program-info p {
+    font-size: 9px;
+  }
+  .register-button {
+    font-size: 9px;
+    padding: 5px;
+  }
+  .date-tile {
+    width: 39px;
+    height: 58px;
+  }
+  .date-tile b {
+    font-size: 20px;
+  }
+  .date-tile span,
+  .date-tile small {
+    font-size: 9px;
+  }
+  .announcement-row {
+    padding: 15px 0;
+    min-height: 67px;
+  }
+  .announcement-row b {
+    font-size: 11px;
+  }
+  .announcement-row time {
+    font-size: 9px;
+  }
+  .activity-row {
+    font-size: 11px;
+    min-height: 57px;
+  }
+  .activity-row p {
+    font-size: 11px;
+  }
+  .activity-row small {
+    font-size: 10px;
+  }
+  .dashboard-footer {
+    padding: 10px 14px;
+    display: block;
+    font-size: 7px;
+    line-height: 1.6;
+  }
+  .dashboard-footer span {
+    display: block;
+  }
+  .admin-shell .dashboard-topbar {
+    height: 66px;
+    padding: 0 14px;
+    gap: 12px;
+  }
+  .admin-shell .dashboard-title {
+    gap: 8px;
+  }
+  .admin-shell .dashboard-title > svg {
+    display: none;
+  }
+  .admin-shell .dashboard-title h1 {
+    font-size: 14px;
+  }
+  .admin-shell .dashboard-title p {
+    font-size: 8px;
+  }
+  .admin-shell .dashboard-topbar > .site-search {
+    display: none;
+  }
+  .admin-shell .dashboard-main {
+    padding: 0 12px 14px;
+  }
+  .admin-hero {
+    margin: 0 -12px;
+    height: 214px;
+    padding: 25px 16px 15px;
+    background-size:
+      cover,
+      auto 100%;
+    background-position:
+      center,
+      55% center;
+  }
+  .admin-hero h2 {
+    font-size: 32px;
+    line-height: 1.02;
+    letter-spacing: -0.5px;
+  }
+  .admin-hero > div > p:first-child {
+    font-size: 11px;
+  }
+  .admin-hero > div > p:last-child {
+    font-size: 11px;
+    max-width: 290px;
+    line-height: 1.45;
+    margin-top: 12px;
+  }
+  .admin-hero aside {
+    position: absolute;
+    right: 14px;
+    bottom: 13px;
+    font-size: 8px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+  }
+  .desktop-break {
+    display: none;
+  }
+  .admin-metrics {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .metric-card {
+    height: 84px;
+    gap: 9px;
+    padding: 10px;
+  }
+  .metric-icon {
+    width: 36px;
+    height: 43px;
+  }
+  .metric-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+  .metric-card h3 {
+    font-size: 8px;
+    white-space: normal;
+  }
+  .metric-card b {
+    font-size: 23px;
+  }
+  .metric-card p {
+    font-size: 8px;
+  }
+  .metric-card > div > div {
+    gap: 7px;
+  }
+  .metric-card > div > div span {
+    font-size: 8px;
+  }
+  .analytics-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .admin-dashboard .panel-header {
+    flex-wrap: nowrap;
+    padding: 11px 12px 5px;
+    min-height: 36px;
+  }
+  .admin-dashboard .panel-header h2 {
+    font-size: 11px;
+  }
+  .panel select {
+    font-size: 8px;
+    max-width: 120px;
+  }
+  .chart-wrap {
+    height: 180px;
+    margin-top: 5px;
+  }
+  .distribution-content {
+    height: 190px;
+    padding: 6px 15px;
+    gap: 15px;
+  }
+  .donut-wrap {
+    height: 165px;
+  }
+  .chart-legend > div {
+    font-size: 8px;
+    margin-bottom: 8px;
+  }
+  .map-content {
+    gap: 7px;
+    height: 195px;
+    padding: 5px 10px;
+  }
+  .map-labels {
+    gap: 12px;
+  }
+  .map-labels span {
+    font-size: 7px;
+    padding: 4px;
+  }
+  .map-content > img {
+    width: 85px;
+    height: 180px;
+  }
+  .map-stats {
+    padding: 8px;
+    min-width: 70px;
+    margin-left: 0;
+  }
+  .map-stats small {
+    font-size: 6px;
+  }
+  .map-stats b {
+    font-size: 15px;
+  }
+  .admin-tables {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .admin-tables table {
+    font-size: 8px;
+    min-width: 440px;
+  }
+  .admin-tables th {
+    font-size: 7px;
+  }
+  .admin-tables td {
+    padding: 7px 5px;
+  }
+  .admin-tables .panel:nth-child(2) table {
+    min-width: 320px;
+  }
+  .admin-tables .panel:nth-child(2) td {
+    padding: 5px;
+  }
+  .quick-actions > div {
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    padding: 5px 8px 9px;
+  }
+  .quick-actions > div > button {
+    padding: 8px;
+    gap: 9px;
+    min-height: 61px;
+  }
+  .quick-actions b {
+    font-size: 9px;
+  }
+  .quick-actions small {
+    font-size: 8px;
+  }
+  .quick-actions > div > button > svg {
+    width: 30px;
+    height: 37px;
+  }
+  .quick-actions > div > button:last-child {
+    grid-column: 1/-1;
+  }
+  .admin-right {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .compact .program-row {
+    padding: 7px;
+    gap: 12px;
+  }
+  .compact .program-info h3 {
+    font-size: 11px;
+  }
+  .compact .program-info p {
+    font-size: 9px;
+  }
+  .compact .date-tile {
+    height: 48px;
+    width: 44px;
+  }
+  .admin-activity p {
+    font-size: 9px;
+    margin: 12px 0;
+  }
+  .admin-activity small {
+    font-size: 7px;
+  }
+  .admin-activity svg {
+    width: 14px;
+    height: 14px;
+  }
+  .dashboard-main.inner-view {
+    padding: 20px 12px;
+  }
+  .inner-view > div {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .approval-details {
+    grid-template-columns: 90px 1fr;
+  }
+  .demo-dialog h2 {
+    font-size: 16px;
+  }
+  .dialog-body {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Corrections from the first reference comparison. */
+.button.outline {
+  outline: none;
+}
+.button.outline:focus-visible {
+  outline: 2px solid var(--gold);
+}
+.verification-card {
+  padding: 14px 20px 12px;
+}
+.verification-card .brand-xl img {
+  height: 112px;
+  width: 110px;
+}
+.verification-card .brand-copy {
+  gap: 6px;
+}
+.verification-card .brand-copy strong {
+  font-size: 17px;
+}
+.verification-card .verified-panel {
+  margin-top: 12px;
+  padding: 13px;
+}
+.verification-card .verified-panel p {
+  line-height: 1.4;
+}
+.public-hero:after {
+  background-size:
+    cover,
+    100% 100%;
+  opacity: 0.45;
+}
+.hero-copy h1 {
+  letter-spacing: 0.1px;
+  font-weight: 800;
+}
+.hero-copy p {
+  font-size: 14px;
+  max-width: 465px;
+}
+.heritage-art {
+  background-size:
+    cover,
+    auto 86%;
+  background-position:
+    center,
+    42% bottom;
+}
+.heritage-card p {
+  width: 90%;
+}
+.heritage-caption {
+  margin-top: 26px;
+}
+.heritage-copy h2 {
+  letter-spacing: 0.8px;
+}
+.public-footer .brand-copy strong {
+  font-size: 8px;
+  white-space: nowrap;
+}
+.public-footer .brand-copy strong br {
+  display: none;
+}
+.public-footer .brand-copy strong br:after {
+  content: " ";
+}
+.member-shell .dashboard-workspace:before {
+  background-image:
+    linear-gradient(90deg, #030a0e 5%, #030a0ee8 34%, transparent 65%),
+    linear-gradient(0deg, #050b0e, transparent 40%),
+    url("/images/reference/command-heritage-demo.png");
+  background-size:
+    cover,
+    cover,
+    auto 265px;
+  background-position:
+    center,
+    center,
+    right top;
+}
+.member-welcome {
+  gap: 33px;
+}
+.welcome-copy dl {
+  font-size: 12px;
+  gap: 24px;
+}
+.heritage-script {
+  right: 8px;
+  font-weight: 400;
+  font-size: 33px;
+}
+.sidebar-heritage span {
+  bottom: 72px;
+}
+.sidebar-heritage:after {
+  opacity: 0.2;
+  background-size: 100% 100%;
+}
+.digital-card-panel {
+  background:
+    linear-gradient(#071719dd, #0b1115 40%),
+    url("/images/reference/command-heritage-demo.png") top center/cover;
+}
+.card-photo {
+  height: 76px;
+  object-position: center top;
+}
+.physical-card {
+  position: relative;
+}
+.card-details > div:last-child {
+  margin-top: -28px;
+}
+.card-brand .brand {
+  max-width: calc(100% - 62px);
+}
+.card-brand .brand-copy {
+  white-space: normal;
+}
+.card-details h3 {
+  max-width: 205px;
+}
+.activity-row {
+  padding: 5px 0 3px;
+}
+.activity-panel {
+  flex: 0 1 auto;
+  padding-bottom: 9px;
+}
+.activity-row p {
+  font-size: 11px;
+}
+.activity-row small {
+  font-size: 10px;
+}
+.member-dashboard .panel-header h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.program-info h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.program-info p {
+  font-size: 11px;
+}
+.program-row > img {
+  width: 84px;
+}
+.program-row {
+  padding: 6px 0;
+}
+.announcement-row b {
+  font-size: 11px;
+  font-weight: 500;
+}
+.belt-card strong {
+  font-size: 11px;
+  font-weight: 550;
+}
+.belt-card span,
+.belt-card small {
+  font-size: 11px;
+}
+.belt-card.current {
+  outline: none;
+  box-shadow: inset 0 0 0 1px #67b88f;
+}
+.admin-shell .sidebar-heritage {
+  background-size: 100% 100%;
+  opacity: 0.38;
+}
+.admin-shell .sidebar-heritage span {
+  opacity: 1;
+  background: #020607;
+}
+.admin-hero {
+  background-image:
+    linear-gradient(
+      90deg,
+      #030605 8%,
+      #030605e8 36%,
+      transparent 65%,
+      #08080840
+    ),
+    url("/images/reference/command-heritage-demo.png");
+  background-size:
+    cover,
+    auto 110%;
+  background-position:
+    center,
+    right center;
+}
+.admin-hero h2 {
+  font-weight: 800;
+  letter-spacing: 0.1px;
+}
+.admin-tables .table-action {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin-tables .panel:first-child td {
+  height: 27px;
+  padding: 4px 5px;
+}
+.admin-tables .panel:nth-child(2) td {
+  height: 25px;
+  padding: 2px 5px;
+}
+.admin-dashboard table {
+  font-size: 9px;
+}
+.admin-dashboard th {
+  font-size: 8px;
+}
+.admin-dashboard .table-status {
+  font-size: 9px;
+  padding: 2px 8px;
+}
+.admin-dashboard .panel-header h2 {
+  font-size: 12px;
+}
+.admin-dashboard .chart-legend > div {
+  font-size: 9px;
+}
+.admin-dashboard .chart-legend small {
+  font-size: 8px;
+}
+.admin-dashboard .chart-legend > div {
+  margin-bottom: 6px;
+}
+.map-content {
+  background:
+    linear-gradient(#061013f2, #061013ed),
+    url("/images/reference/air-kuning-demo.png") center/cover;
+}
+.admin-activity p {
+  font-size: 8px;
+}
+.quick-actions b {
+  font-size: 9px;
+}
+.quick-actions small {
+  font-size: 8px;
+}
+.quick-actions > div > button {
+  min-height: 51px;
+}
+.compact .program-info h3 {
+  font-size: 10px;
+}
+.compact .program-info p {
+  font-size: 9px;
+}
+.dashboard-main.inner-view {
+  padding-top: 24px;
+}
+@media (min-width: 801px) {
+  .member-shell .sidebar-toggle {
+    display: none;
+  }
+  .member-shell .dashboard-title:before {
+    content: "";
+    width: 20px;
+    height: 14px;
+    border-block: 2px solid #cbb15c;
+    box-shadow:
+      inset 0 5px #080c0d,
+      inset 0 7px #cbb15c;
+    margin-right: 10px;
+  }
+  .member-shell .dashboard-topbar {
+    padding-left: 23px;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1599px) {
+  .admin-hero {
+    height: 181px;
+  }
+  .admin-tables .panel:first-child td {
+    height: 27px;
+  }
+  .admin-tables .panel:nth-child(2) td {
+    height: 25px;
+  }
+  .chart-wrap {
+    height: 162px;
+  }
+  .distribution-content,
+  .map-content {
+    height: 174px;
+  }
+}
+@media (max-width: 1450px) {
+  .welcome-copy dl {
+    font-size: 10px;
+    gap: 18px;
+  }
+  .program-info h3 {
+    font-size: 10px;
+  }
+  .program-info p {
+    font-size: 9px;
+  }
+  .program-row > img {
+    width: 65px;
+  }
+  .admin-dashboard .panel-header h2 {
+    font-size: 10px;
+  }
+  .admin-dashboard .chart-legend > div {
+    font-size: 8px;
+  }
+  .admin-dashboard table {
+    font-size: 8px;
+  }
+  .admin-dashboard th {
+    font-size: 7px;
+  }
+}
+@media (max-width: 1280px) {
+  .hero-copy p {
+    font-size: 13px;
+    max-width: 420px;
+  }
+  .member-welcome {
+    gap: 21px;
+  }
+  .member-dashboard .panel-header h2 {
+    font-size: 12px;
+  }
+  .belt-card strong {
+    font-size: 8px;
+  }
+  .belt-card span,
+  .belt-card small {
+    font-size: 9px;
+  }
+  .admin-dashboard .table-status {
+    font-size: 7px;
+  }
+  .quick-actions b {
+    font-size: 8px;
+  }
+  .quick-actions small {
+    font-size: 7px;
+  }
+}
+@media (max-width: 1100px) {
+  .hero-copy p {
+    font-size: 12px;
+    max-width: 390px;
+  }
+  .verification-card .brand-copy strong {
+    font-size: 15px;
+  }
+  .welcome-copy dl {
+    gap: 9px 20px;
+  }
+  .belt-card strong {
+    font-size: 10px;
+  }
+  .admin-dashboard .panel-header h2 {
+    font-size: 11px;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .hero-copy h1 {
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+  .hero-copy p {
+    max-width: 365px;
+  }
+  .hero-content {
+    gap: 15px;
+  }
+  .verification-card {
+    width: 240px;
+  }
+  .verification-card .brand-copy strong {
+    font-size: 14px;
+  }
+  .hero-actions .button {
+    min-width: 145px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-copy h1 {
+    font-size: clamp(27px, 7.5vw, 40px);
+    letter-spacing: -0.6px;
+  }
+  .hero-copy p {
+    font-size: 12px;
+    max-width: 335px;
+  }
+  .verification-card {
+    padding: 16px;
+  }
+  .verification-card .brand-xl img {
+    width: 65px;
+    height: 77px;
+  }
+  .verification-card .brand-copy strong {
+    font-size: 11px;
+  }
+  .verification-card .brand-copy {
+    gap: 4px;
+  }
+  .verification-card .verified-panel {
+    margin: 0;
+    padding: 12px;
+  }
+  .heritage-art {
+    background-size:
+      cover,
+      auto 55%;
+    background-position:
+      center,
+      center top;
+  }
+  .member-welcome {
+    gap: 15px;
+  }
+  .member-shell .dashboard-workspace:before {
+    background-size:
+      cover,
+      cover,
+      auto 265px;
+    background-position:
+      center,
+      center,
+      68% top;
+  }
+  .member-dashboard .panel-header h2 {
+    font-size: 13px;
+  }
+  .welcome-copy dl {
+    font-size: 9px;
+    gap: 14px 8px;
+  }
+  .program-info h3 {
+    font-size: 10px;
+  }
+  .program-info p {
+    font-size: 9px;
+  }
+  .program-row > img {
+    width: 65px;
+  }
+  .belt-card strong {
+    font-size: 9px;
+  }
+  .belt-card span,
+  .belt-card small {
+    font-size: 9px;
+  }
+  .card-details > div:last-child {
+    margin-top: -20px;
+  }
+  .card-details h3 {
+    max-width: 190px;
+  }
+  .activity-row {
+    min-height: 57px;
+  }
+  .admin-hero {
+    background-size:
+      cover,
+      auto 100%;
+    background-position:
+      center,
+      55% center;
+  }
+  .admin-dashboard .panel-header h2 {
+    font-size: 11px;
+  }
+  .admin-dashboard .chart-legend > div {
+    font-size: 8px;
+  }
+  .admin-dashboard table {
+    font-size: 8px;
+  }
+  .admin-tables .panel:first-child td {
+    height: 34px;
+  }
+  .admin-tables .panel:nth-child(2) td {
+    height: 31px;
+  }
+  .compact .program-info h3 {
+    font-size: 11px;
+  }
+  .compact .program-info p {
+    font-size: 9px;
+  }
+  .quick-actions b {
+    font-size: 9px;
+  }
+  .quick-actions small {
+    font-size: 8px;
+  }
+}
+.management-view {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 10px 0 30px;
+}
+.management-view > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+.management-view h1,
+.member-card-view > h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.management-view header p,
+.member-card-view > p {
+  font-size: 12px;
+  color: #aeb9be;
+  margin-top: 7px;
+}
+.management-search {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  max-width: 440px;
+  margin-bottom: 20px;
+}
+.management-search input,
+.demo-form input {
+  background: #0e171b;
+  border: 1px solid #657278;
+  border-radius: 5px;
+  padding: 10px 12px;
+  color: #fff;
+  min-width: 0;
+}
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+.management-grid .panel-header h2 {
+  white-space: normal;
+  line-height: 1.4;
+}
+.management-program {
+  padding: 5px 16px 20px;
+  font-size: 13px;
+}
+.management-program p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+.management-program svg {
+  width: 16px;
+  height: 16px;
+}
+.management-notice {
+  padding: 12px;
+  border: 1px solid #238c69;
+  background: #073b2d;
+  color: #bcf4dc;
+  font-size: 13px;
+  margin: 15px 0;
+}
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.demo-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.settings-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  font-size: 14px;
+}
+.settings-toggle input {
+  accent-color: #0da87b;
+  width: 18px;
+  height: 18px;
+}
+.member-card-view {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.member-card-view > p {
+  margin-bottom: 25px;
+}
+.member-card-view .physical-card {
+  padding: 20px;
+}
+.member-card-view .card-details h3 {
+  font-size: 16px;
+}
+.member-card-view .card-details p {
+  font-size: 11px;
+}
+.member-card-view .card-brand .brand-copy strong {
+  font-size: 10px;
+}
+.download-error {
+  font-size: 12px;
+  padding: 10px 15px;
+  color: #ffafb5;
+}
+.demo-provenance-notice {
+  font-size: 11px;
+  color: #b9c9c8;
+  text-align: center;
+  padding: 8px;
+  background: #0b2420;
+  border-bottom: 1px solid #184033;
+}
+@media (max-width: 600px) {
+  .management-view > header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .management-grid {
+    grid-template-columns: 1fr;
+  }
+  .management-view h1,
+  .member-card-view > h1 {
+    font-size: 23px;
+  }
+}

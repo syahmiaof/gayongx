@@ -1,0 +1,6 @@
+{
+  "name": "PSSGM Perak Digital Ecosystem",
+  "description": "Ekosistem Digital Rasmi Pertubuhan Silat Seni Gayong Malaysia Bahagian Negeri Perak - Laman Rasmi, Portal Ahli & Pusat Kawalan Pentadbiran",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

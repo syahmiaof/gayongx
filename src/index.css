@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "./reference.css";
+@import "./responsive.css";
+
+@theme {
+  --color-gayong-black: #050607;
+  --color-surface-black: #0a0d0f;
+  --color-elevated-surface: #101518;
+  --color-royal-yellow: #f5d400;
+  --color-gayong-red: #df2029;
+  --color-heritage-green: #00845a;
+  --color-warm-white: #f4f1e8;
+  --color-muted-text: #a6adb4;
+
+  --font-serif: "Inter", sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  --gayong-black: #050607;
+  --surface-black: #0a0d0f;
+  --elevated-surface: #101518;
+  --royal-yellow: #f5d400;
+  --gayong-red: #df2029;
+  --heritage-green: #00845a;
+  --warm-white: #f4f1e8;
+  --muted-text: #a6adb4;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background-color: var(--gayong-black);
+  color: var(--warm-white);
+}
+
+/* Custom scrollbar for clean institutional dashboards */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--elevated-surface);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2c31;
+}
