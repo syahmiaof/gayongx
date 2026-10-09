@@ -1,93 +1,57 @@
-# 🥋 GayongX: Ekosistem Digital Bersepadu Seni Silat Gayong
-
 <div align="center">
-
-![Status](https://img.shields.io/badge/Status-Active%20Ecosystem-success?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Frontend-React%2019%20%7C%20TypeScript%20%7C%20Vite-blue?style=for-the-badge)
-![UI / UX](https://img.shields.io/badge/Styling-Tailwind%20CSS%20v4%20%7C%20Motion-purple?style=for-the-badge)
-![AI Analytics](https://img.shields.io/badge/AI%20Engine-Gemini%20%7C%20Gen%20AI-orange?style=for-the-badge)
-
-<p align="center">
-  <strong>Pusat Sehenti Digitalisasi Seni Silat: Dari Pengurusan Keahlian, Analitik Atlet, Kurikulum Interaktif, E-Dagang, hingga Gamifikasi Sejarah.</strong>
-</p>
-
+  <h1>GayongX</h1>
+  <p><strong>A connected digital ecosystem concept for Silat Seni Gayong Perak.</strong></p>
+  <p><a href="https://gayongx.syahmiaof.my">Open current website</a> · <a href="https://syahmiaof.my/projects">Portfolio context</a></p>
 </div>
 
----
+![GayongX public website](https://raw.githubusercontent.com/syahmiaof/syahmiaof/main/public/images/gayongx-website.jpg)
 
-## 📌 Pengenalan Projek
+> Active development. The public website is implemented; the wider membership, learning, analytics and marketplace ecosystem remains a staged roadmap.
 
-**GayongX** adalah platform digital komprehensif yang dirancang untuk memartabatkan, memelihara, dan memodenkan pengurusan seni mempertahankan diri tradisi, khususnya **Pertubuhan Seni Silat Pusaka Gayong**. 
+## Direction
 
-Projek ini menggabungkan portal awam interaktif, pangkalan data keahlian berpusat merentasi cawangan negeri, penjejakan prestasi atlet silat berasaskan analitik data, kurikulum digital (LMS), portal barangan rasmi (e-Commerce), serta integrasi elemen gamifikasi jalan cerita sejarah Silat Gayong.
+GayongX explores how public information, association operations, member services, heritage learning and athlete development can live in one coherent platform.
 
----
+## Current implementation
 
-## 🌟 Modul & Ciri-Ciri Utama Ekosistem
+- Public-facing website and visual identity.
+- Initial content and navigation structure.
+- Early ecosystem and module design.
+- Separate working prototypes for athlete analytics and interactive heritage storytelling.
 
-- 🌐 **Portal Rasmi Bersepadu:** Laman interaktif moden untuk makluman berita, sejarah, warisan gurulatih, dan kalendar aktiviti gelanggang.
-- 🆔 **Pengurusan Ahli & Cawangan Berpusat:** Penyeragaman pendaftaran ahli baharu, pengeluaran kad digital, dan pemantauan cawangan gelanggang di seluruh Malaysia.
-- 📚 **Syllabus & Edu-LMS:** Panduan video dan modul kurikulum silat berperingkat mengikut warna bengkung (dari Awan Putih ke Pelangi Hitam).
-- 📊 **Gayong Athlete Analytics:** Papan pemuka analitik prestasi fizikal dan rekod perlawanan (olahraga & seni) untuk persediaan kejohanan kebangsaan.
-- 🛍️ **E-Commerce Rasmi:** Pasaran dalam talian untuk pembelian pakaian silat, bengkung, tanjak, dan barangan cenderamata rasmi Gayong.
-- 🎮 **Gamifikasi Sejarah (Storyline Lore):** Modul interaktif memperkenalkan falsafah dan susur galur sejarah pendekar melalui penceritaan visual moden.
+## Roadmap
 
----
+| Module | Status |
+|---|---|
+| Public website | Implemented and evolving |
+| Member and gelanggang management | Planned / in development |
+| Grading and attendance | Planned |
+| Learning and heritage resources | Prototype work |
+| Athlete analytics | Separate functional prototype with demo data |
+| Marketplace | Concept / roadmap |
 
-## 🛠️ Arkitektur & Teknologi Digunakan
+## Related builds
 
-| Komponen | Spesifikasi Teknologi |
-| :--- | :--- |
-| **Frontend Framework** | React 19, TypeScript, Vite 8 |
-| **Gaya & Animasi** | Tailwind CSS v4, Motion (Framer Motion), Lucide Icons, Clsx |
-| **Analitik & Graf** | Recharts, TanStack Table |
-| **AI & Pembantu Pintar** | Google Gen AI (`@google/genai`) & Gemini Models |
-| **Pelayan & Hosting** | Express.js, Node.js, Vercel Production Deployment |
+- [GayongX Athlete Analytics](https://github.com/syahmiaof/gayongx-athlete-analytics)
+- [GayongX Warisan](https://github.com/syahmiaof/gayongx-warisan)
 
----
+## Stack
 
-## 🚀 Panduan Pemasangan & Menjalankan Projek
+React, TypeScript, Vite, Tailwind CSS and Motion, with Node.js/Vercel used for the current application delivery.
 
-### 1. Keperluan Awal
-- **Node.js** (Versi 20 ke atas disyorkan)
-- **Git**
+## Local development
 
-### 2. Klon Repositori
-```bash
-git clone https://github.com/syahmiaof/gayongx.git
-cd gayongx
-```
-
-### 3. Pasang Kebergantungan (Dependencies)
-```bash
+~~~bash
 npm install
-```
-
-### 4. Konfigurasi Fail `.env`
-Sediakan fail `.env` pada direktori utama:
-```env
-GEMINI_API_KEY=kunci_api_gemini_anda
-PORT=3000
-```
-
-### 5. Jalankan Pelayan Pembangunan
-```bash
 npm run dev
-```
-Buka pelayar web dan layari `http://localhost:3000` untuk memulakan sistem.
+~~~
 
----
+Provide any required service keys through local environment variables. Do not commit production secrets.
 
-## 🎯 Visi & Transformasi Digital
+## Status and limits
 
-> *"Mengangkat martabat warisan pusaka bangsa ke pentas teknologi moden tanpa menghilangkan roh dan adab persilatan tradisi."*
+The repository presents a developing ecosystem direction. Screens, records and analytics may use synthetic data. Module descriptions are a roadmap unless explicitly identified above as implemented.
 
----
+## Builder
 
-## 👨‍💻 Pengarang & Pembangun
-
-**Muhammad Syahmi (syahmiaof)**  
-*Full-Stack & Cloud Systems Developer*  
-- 🌐 Laman Web: [syahmiaof.my](https://syahmiaof.my)  
-- 🐙 GitHub: [@syahmiaof](https://github.com/syahmiaof)  
-- ✉️ E-mel: [syahmiaof123@gmail.com](mailto:syahmiaof123@gmail.com)
+[Muhammad Syahmi](https://syahmiaof.my) · [GitHub](https://github.com/syahmiaof)
