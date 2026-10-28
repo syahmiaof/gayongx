@@ -1,52 +1,67 @@
-import React from 'react';
-import { GraduationCap, Award, MapPin, CheckCircle2, Shield } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  GraduationCap,
+  Award,
+  MapPin,
+  CheckCircle2,
+  Shield,
+} from "lucide-react";
 
 export const TrainerManagementView: React.FC = () => {
+  const [demoMessage, setDemoMessage] = useState("");
   const trainers = [
     {
-      id: 'g-01',
-      name: 'Cikgu Mohd Razif bin Hassan',
-      bengkong: 'Cula Merah (Pelangi Merah Cula 2)',
-      cawangan: 'Cawangan Daerah Batang Padang',
-      gelanggang: 'Gelanggang Demo Tapah',
-      qualification: 'Tauliah Jurulatih Kanan Negeri Perak (Siri 2018)',
+      id: "g-01",
+      name: "Cikgu Mohd Razif bin Hassan",
+      bengkong: "Cula Merah (Pelangi Merah Cula 2)",
+      cawangan: "Cawangan Daerah Batang Padang",
+      gelanggang: "Gelanggang Demo Tapah",
+      qualification: "Tauliah Jurulatih Kanan Negeri Perak (Siri 2018)",
       yearsExperience: 14,
-      status: 'Bertauliah Aktif',
+      status: "Bertauliah Aktif",
     },
     {
-      id: 'g-02',
-      name: 'Cikgu Kamaruddin bin Othman',
-      bengkong: 'Cula Hitam Harimau (Tertinggi)',
-      cawangan: 'Cawangan Seladang Berjuang, Manjung',
-      gelanggang: 'Gelanggang Sri Seladang Seri Manjung',
-      qualification: 'Tauliah Dewan Gurulatih PSSGM Pusat & Negeri',
+      id: "g-02",
+      name: "Cikgu Kamaruddin bin Othman",
+      bengkong: "Cula Hitam Harimau (Tertinggi)",
+      cawangan: "Cawangan Seladang Berjuang, Manjung",
+      gelanggang: "Gelanggang Sri Seladang Seri Manjung",
+      qualification: "Tauliah Dewan Gurulatih PSSGM Pusat & Negeri",
       yearsExperience: 28,
-      status: 'Bertauliah Aktif',
+      status: "Bertauliah Aktif",
     },
     {
-      id: 'g-03',
-      name: 'Cikgu Hashim bin Ahmad',
-      bengkong: 'Pelangi Merah',
-      cawangan: 'Cawangan Daerah Batang Padang',
-      gelanggang: 'Gelanggang Komuniti Bidor',
-      qualification: 'Tauliah Jurulatih Asas Gelanggang',
+      id: "g-03",
+      name: "Cikgu Hashim bin Ahmad",
+      bengkong: "Pelangi Merah",
+      cawangan: "Cawangan Daerah Batang Padang",
+      gelanggang: "Gelanggang Komuniti Bidor",
+      qualification: "Tauliah Jurulatih Asas Gelanggang",
       yearsExperience: 9,
-      status: 'Bertauliah Aktif',
+      status: "Bertauliah Aktif",
     },
     {
-      id: 'g-04',
-      name: 'Cikgu Megat Abdullah',
-      bengkong: 'Pelangi Kuning',
-      cawangan: 'Jawatankuasa Penaja Larut Matang',
-      gelanggang: 'Gelanggang Warisan Air Kuning',
-      qualification: 'Pemegang Amanah Warisan Air Kuning Taiping',
+      id: "g-04",
+      name: "Cikgu Megat Abdullah",
+      bengkong: "Pelangi Kuning",
+      cawangan: "Jawatankuasa Penaja Larut Matang",
+      gelanggang: "Gelanggang Warisan Air Kuning",
+      qualification: "Pemegang Amanah Warisan Air Kuning Taiping",
       yearsExperience: 22,
-      status: 'Bertauliah Aktif',
+      status: "Bertauliah Aktif",
     },
   ];
 
   return (
     <div className="max-w-5xl mx-auto space-y-8 text-left">
+      {demoMessage && (
+        <p
+          className="border border-amber-800 bg-amber-950/40 p-3 text-xs text-amber-100"
+          role="status"
+        >
+          {demoMessage}
+        </p>
+      )}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-stone-800 pb-6">
         <div>
           <div className="text-xs font-mono text-[#D4AF37] uppercase tracking-wider font-bold">
@@ -56,8 +71,8 @@ export const TrainerManagementView: React.FC = () => {
             Direktori Gurulatih Bertauliah PSSGM Perak
           </h1>
           <p className="text-xs text-stone-400 mt-1">
-            Senarai gurulatih yang memegang tauliah mengajar rasmi daripada Lembaga Gurulatih PSSGM
-            Bahagian Negeri Perak.
+            Senarai gurulatih yang memegang tauliah mengajar rasmi daripada
+            Lembaga Gurulatih PSSGM Bahagian Negeri Perak.
           </p>
         </div>
 
@@ -78,7 +93,9 @@ export const TrainerManagementView: React.FC = () => {
                   <div className="text-[10px] font-mono text-[#FFF100] uppercase font-bold">
                     {t.bengkong}
                   </div>
-                  <h3 className="text-lg font-bold text-white font-serif">{t.name}</h3>
+                  <h3 className="text-lg font-bold text-white font-serif">
+                    {t.name}
+                  </h3>
                 </div>
                 <span className="px-2 py-0.5 text-[10px] font-mono font-bold bg-emerald-950 text-emerald-300 border border-emerald-800 rounded">
                   {t.status}
@@ -105,10 +122,16 @@ export const TrainerManagementView: React.FC = () => {
             </div>
 
             <div className="pt-3 border-t border-stone-800 flex items-center justify-between text-xs">
-              <span className="text-stone-500 font-mono text-[10px]">ID: {t.id}</span>
+              <span className="text-stone-500 font-mono text-[10px]">
+                ID: {t.id}
+              </span>
               <button
                 type="button"
-                onClick={() => alert(`Rekod tauliah rasmi ${t.name} disahkan sah.`)}
+                onClick={() =>
+                  setDemoMessage(
+                    `Rekod tauliah ${t.name} ialah data simulasi dan belum disahkan.`,
+                  )
+                }
                 className="text-xs text-[#FFF100] hover:underline font-semibold"
               >
                 Semak Dokumen Tauliah &rarr;

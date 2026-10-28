@@ -1,14 +1,25 @@
-import React, { useState } from 'react';
-import { SYNTHETIC_PRIMARY_MEMBER } from '../../data/seedData';
-import { Logo } from '../../components/common/Logo';
-import { FileText, Download, Award, ShieldCheck, X, Eye } from 'lucide-react';
+import React, { useState } from "react";
+import { SYNTHETIC_PRIMARY_MEMBER } from "../../data/seedData";
+import { Logo } from "../../components/common/Logo";
+import { FileText, Download, Award, ShieldCheck, X, Eye } from "lucide-react";
 
 export const MemberCertificatesView: React.FC = () => {
   const member = SYNTHETIC_PRIMARY_MEMBER;
-  const [activeCert, setActiveCert] = useState<(typeof member.certificates)[0] | null>(null);
+  const [activeCert, setActiveCert] = useState<
+    (typeof member.certificates)[0] | null
+  >(null);
+  const [demoMessage, setDemoMessage] = useState("");
 
   return (
     <div className="max-w-5xl mx-auto space-y-8 text-left">
+      {demoMessage && (
+        <p
+          className="border border-amber-800 bg-amber-950/40 p-3 text-xs text-amber-100"
+          role="status"
+        >
+          {demoMessage}
+        </p>
+      )}
       {/* Header */}
       <div className="border-b border-stone-800 pb-6">
         <div className="text-xs font-mono text-[#D4AF37] uppercase tracking-wider">
@@ -18,8 +29,8 @@ export const MemberCertificatesView: React.FC = () => {
           Sijil &amp; Pengiktirafan Rasmi
         </h1>
         <p className="text-xs text-stone-400 mt-1">
-          Setiap sijil dilengkapi nombor siri keselamatan yang didaftarkan dalam arkib pangkalan data
-          negeri PSSGM Bahagian Negeri Perak.
+          Setiap sijil dilengkapi nombor siri keselamatan yang didaftarkan dalam
+          arkib pangkalan data negeri PSSGM Bahagian Negeri Perak.
         </p>
       </div>
 
@@ -32,11 +43,15 @@ export const MemberCertificatesView: React.FC = () => {
           >
             <div className="space-y-3">
               <div className="flex items-center justify-between text-[10px] font-mono text-stone-400">
-                <span className="text-[#FFF100] uppercase font-bold">{cert.category}</span>
+                <span className="text-[#FFF100] uppercase font-bold">
+                  {cert.category}
+                </span>
                 <span>{cert.issueDate}</span>
               </div>
 
-              <h3 className="text-base font-serif font-bold text-white leading-snug">{cert.title}</h3>
+              <h3 className="text-base font-serif font-bold text-white leading-snug">
+                {cert.title}
+              </h3>
 
               <div className="space-y-1 text-xs text-stone-400">
                 <div className="font-mono text-[11px] text-stone-300">
@@ -110,7 +125,8 @@ export const MemberCertificatesView: React.FC = () => {
                   {member.fullName}
                 </div>
                 <div className="text-xs font-mono text-stone-700">
-                  No. Keahlian: {member.membershipNumber} · MyKad: {member.maskedIc}
+                  No. Keahlian: {member.membershipNumber} · MyKad:{" "}
+                  {member.maskedIc}
                 </div>
               </div>
 
@@ -125,16 +141,24 @@ export const MemberCertificatesView: React.FC = () => {
 
               <div className="pt-4 border-t border-stone-300 grid grid-cols-2 gap-4 text-left text-xs font-serif">
                 <div>
-                  <div className="text-[10px] text-stone-500 uppercase">Tarikh Dikeluarkan</div>
-                  <div className="font-mono text-stone-800">{activeCert.issueDate}</div>
+                  <div className="text-[10px] text-stone-500 uppercase">
+                    Tarikh Dikeluarkan
+                  </div>
+                  <div className="font-mono text-stone-800">
+                    {activeCert.issueDate}
+                  </div>
                   <div className="text-[9px] font-mono text-stone-600 mt-1">
                     Siri: {activeCert.certificateNumber}
                   </div>
                 </div>
 
                 <div className="text-right">
-                  <div className="text-[10px] text-stone-500 uppercase">Pihak Berkuasa Pensijilan</div>
-                  <div className="font-semibold text-stone-900">{activeCert.issuingAuthority}</div>
+                  <div className="text-[10px] text-stone-500 uppercase">
+                    Pihak Berkuasa Pensijilan
+                  </div>
+                  <div className="font-semibold text-stone-900">
+                    {activeCert.issuingAuthority}
+                  </div>
                   <div className="text-[9px] text-emerald-800 font-mono mt-1">
                     Meterai Digital Sah
                   </div>
@@ -158,7 +182,9 @@ export const MemberCertificatesView: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => {
-                    alert('Sijil digital sedang dijana sebagai fail PDF rasmi...');
+                    setDemoMessage(
+                      "Fail sijil ini hanya visual demo. PDF rasmi belum dijana atau dimuat turun.",
+                    );
                     setActiveCert(null);
                   }}
                   className="px-4 py-2 bg-[#297E62] hover:bg-[#20664f] text-white rounded font-bold shadow"
