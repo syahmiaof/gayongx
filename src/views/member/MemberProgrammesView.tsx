@@ -1,11 +1,23 @@
-import React, { useState } from 'react';
-import { SYNTHETIC_PRIMARY_MEMBER, UPCOMING_PROGRAMMES } from '../../data/seedData';
-import { Calendar, MapPin, CheckCircle2, Clock, AlertCircle } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  SYNTHETIC_PRIMARY_MEMBER,
+  UPCOMING_PROGRAMMES,
+} from "../../data/seedData";
+import {
+  Calendar,
+  MapPin,
+  CheckCircle2,
+  Clock,
+  AlertCircle,
+} from "lucide-react";
 
 export const MemberProgrammesView: React.FC = () => {
   const member = SYNTHETIC_PRIMARY_MEMBER;
-  const [activeTab, setActiveTab] = useState<'registered' | 'explore'>('registered');
+  const [activeTab, setActiveTab] = useState<"registered" | "explore">(
+    "registered",
+  );
   const [checkedIn, setCheckedIn] = useState(false);
+  const [demoMessage, setDemoMessage] = useState("");
 
   return (
     <div className="max-w-5xl mx-auto space-y-8 text-left">
@@ -19,7 +31,8 @@ export const MemberProgrammesView: React.FC = () => {
             Program &amp; Kursus Saya
           </h1>
           <p className="text-xs text-stone-400 mt-1">
-            Semak rekod kehadiran acara latihan, kursus kejurulatihan, dan daftar program rasmi seterusnya.
+            Semak rekod kehadiran acara latihan, kursus kejurulatihan, dan
+            daftar program rasmi seterusnya.
           </p>
         </div>
 
@@ -27,22 +40,22 @@ export const MemberProgrammesView: React.FC = () => {
         <div className="flex items-center gap-1 bg-[#121316] p-1 rounded-lg border border-stone-800">
           <button
             type="button"
-            onClick={() => setActiveTab('registered')}
+            onClick={() => setActiveTab("registered")}
             className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${
-              activeTab === 'registered'
-                ? 'bg-stone-800 text-white font-semibold'
-                : 'text-stone-400 hover:text-white'
+              activeTab === "registered"
+                ? "bg-stone-800 text-white font-semibold"
+                : "text-stone-400 hover:text-white"
             }`}
           >
             Program Berdaftar ({member.programmes.length})
           </button>
           <button
             type="button"
-            onClick={() => setActiveTab('explore')}
+            onClick={() => setActiveTab("explore")}
             className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${
-              activeTab === 'explore'
-                ? 'bg-[#297E62] text-white font-semibold'
-                : 'text-stone-400 hover:text-white'
+              activeTab === "explore"
+                ? "bg-[#297E62] text-white font-semibold"
+                : "text-stone-400 hover:text-white"
             }`}
           >
             Daftar Acara Baharu
@@ -53,11 +66,19 @@ export const MemberProgrammesView: React.FC = () => {
       {checkedIn && (
         <div className="p-3 bg-emerald-950/80 border border-emerald-800 rounded-md text-xs text-emerald-200 flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-          <span>Pengesahan kehadiran QR gelanggang berjaya direkodkan dalam buku log digital.</span>
+          <span>Simulasi daftar hadir berjaya. Tiada rekod disimpan.</span>
+        </div>
+      )}
+      {demoMessage && (
+        <div
+          className="p-3 border border-amber-700 bg-amber-950/50 text-xs text-amber-100"
+          role="status"
+        >
+          {demoMessage}
         </div>
       )}
 
-      {activeTab === 'registered' ? (
+      {activeTab === "registered" ? (
         <div className="space-y-4">
           {member.programmes.map((p) => (
             <div
@@ -68,7 +89,9 @@ export const MemberProgrammesView: React.FC = () => {
                 <div className="flex items-center gap-2 text-xs font-mono">
                   <span
                     className={`font-bold ${
-                      p.status === 'Berdaftar' ? 'text-[#FFF100]' : 'text-emerald-400'
+                      p.status === "Berdaftar"
+                        ? "text-[#FFF100]"
+                        : "text-emerald-400"
                     }`}
                   >
                     {p.status}
@@ -90,16 +113,18 @@ export const MemberProgrammesView: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-2 shrink-0">
-                {p.status === 'Berdaftar' && (
+                {p.status === "Berdaftar" && (
                   <button
                     type="button"
                     onClick={() => setCheckedIn(true)}
                     className="px-3 py-2 bg-[#297E62] hover:bg-[#20664f] text-white text-xs font-bold rounded shadow transition-colors"
                   >
-                    Daftar Masuk (Check-in)
+                    Simulasi Daftar Hadir
                   </button>
                 )}
-                <span className="text-xs text-stone-500 font-mono">ID: {p.id}</span>
+                <span className="text-xs text-stone-500 font-mono">
+                  ID: {p.id}
+                </span>
               </div>
             </div>
           ))}
@@ -107,7 +132,8 @@ export const MemberProgrammesView: React.FC = () => {
       ) : (
         <div className="space-y-4">
           <div className="text-xs text-stone-400">
-            Berikut adalah takwim program terbuka untuk penyertaan pesilat berstatus aktif:
+            Berikut adalah takwim program terbuka untuk penyertaan pesilat
+            berstatus aktif:
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {UPCOMING_PROGRAMMES.map((prog) => (
@@ -116,9 +142,15 @@ export const MemberProgrammesView: React.FC = () => {
                 className="p-5 bg-[#121418] border border-stone-800 rounded-xl space-y-3 flex flex-col justify-between"
               >
                 <div className="space-y-2">
-                  <div className="text-xs font-mono text-[#FFF100]">{prog.category}</div>
-                  <h4 className="text-sm font-bold text-white leading-snug">{prog.title}</h4>
-                  <p className="text-xs text-stone-400 line-clamp-2">{prog.description}</p>
+                  <div className="text-xs font-mono text-[#FFF100]">
+                    {prog.category}
+                  </div>
+                  <h4 className="text-sm font-bold text-white leading-snug">
+                    {prog.title}
+                  </h4>
+                  <p className="text-xs text-stone-400 line-clamp-2">
+                    {prog.description}
+                  </p>
                 </div>
 
                 <div className="pt-3 border-t border-stone-800 flex items-center justify-between text-xs">
@@ -127,7 +159,11 @@ export const MemberProgrammesView: React.FC = () => {
                   </span>
                   <button
                     type="button"
-                    onClick={() => alert(`Pendaftaran untuk "${prog.title}" berjaya dihantar!`)}
+                    onClick={() =>
+                      setDemoMessage(
+                        `Simulasi pendaftaran untuk “${prog.title}”. Tiada permohonan dihantar atau bayaran diproses.`,
+                      )
+                    }
                     className="px-3 py-1.5 bg-[#D71F26] hover:bg-[#b8171d] text-white rounded font-medium"
                   >
                     Daftar Sekarang &rarr;

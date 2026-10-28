@@ -19,6 +19,7 @@ import { NewsView } from "./views/public/NewsView";
 import { JoinView } from "./views/public/JoinView";
 import { VerificationView } from "./views/public/VerificationView";
 import { ContactView } from "./views/public/ContactView";
+import { LoginView } from "./views/public/LoginView";
 
 // Member Views
 import { MemberDashboardView } from "./views/member/MemberDashboardView";
@@ -93,6 +94,8 @@ export default function App() {
     switch (currentPath) {
       case "/":
         return <HomeView onNavigate={navigateTo} />;
+      case "/login":
+        return <LoginView onNavigate={navigateTo} />;
       case "/sejarah":
         return <HistoryView />;
       case "/organisasi":
@@ -217,12 +220,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#090a0c] text-[#f4f4f5] flex flex-col font-sans selection:bg-[#D71F26] selection:text-white">
       {/* 1. Global Unified Ecosystem Switcher */}
-      <EcosystemBar
-        currentMode={ecosystemMode}
-        onSelectMode={(mode) => setEcosystemMode(mode)}
-        currentPath={currentPath}
-        onNavigate={navigateTo}
-      />
+      <EcosystemBar currentMode={ecosystemMode} />
 
       {/* 2. Primary Ecosystem Content Router */}
       {ecosystemMode === "public" && (

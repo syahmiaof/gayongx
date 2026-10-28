@@ -83,8 +83,8 @@ const destinations = [
   ["Direktori Gelanggang", "/gelanggang"],
   ["Dokumen Ahli", "/portal/dokumen"],
   ["Cawangan", "/cawangan"],
-  ["Portal Anak Gayong", "/portal"],
-  ["CMS Pentadbiran", "/admin"],
+  ["Portal Anak Gayong", "/login"],
+  ["CMS Pentadbiran", "/login"],
   ["Semak Keahlian", "/semakan"],
   ["Kelulusan", "/admin/kelulusan"],
 ];
@@ -111,7 +111,7 @@ export function SiteSearch({
           {results.length ? (
             results.map(([name, path]) => (
               <button
-                key={path}
+                key={name}
                 onClick={() => {
                   setQuery("");
                   onNavigate(path);

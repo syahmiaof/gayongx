@@ -322,6 +322,14 @@ em {
 .nav-join {
   min-height: 42px;
 }
+.nav-login {
+  min-height: 42px;
+  white-space: nowrap;
+}
+.nav-login svg {
+  width: 15px;
+  height: 15px;
+}
 .mobile-menu {
   display: none;
 }
@@ -334,6 +342,59 @@ em {
   background: #141a1c;
   border: 1px solid #ffffff30;
 }
+.login-page {
+  min-height: calc(100vh - 122px);
+  padding: 30px max(5vw, calc((100vw - 1240px) / 2));
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 28%, #26301d 0%, #101311 42%, #080a0b 78%);
+}
+.login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .16;
+  background: url("/images/reference/songket-demo.png") right center / auto 100% no-repeat;
+  mask-image: linear-gradient(90deg, transparent 38%, #000 100%);
+}
+.login-back {
+  position: absolute;
+  top: 28px;
+  left: max(5vw, calc((100vw - 1240px) / 2));
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #dedbd0;
+  font-size: 13px;
+}
+.login-back svg { width: 16px; height: 16px; }
+.login-panel {
+  z-index: 1;
+  width: min(100%, 850px);
+  padding: 42px;
+  border: 1px solid #d8be573d;
+  background: #0c100fed;
+  box-shadow: 0 24px 80px #0008;
+  text-align: center;
+}
+.login-panel > .brand { margin: 0 auto 18px; }
+.login-kicker { margin: 0 0 10px; color: var(--gold); font-size: 10px; letter-spacing: 1.6px; }
+.login-panel h1 { margin: 0; color: #f4f1e8; font: 700 clamp(28px, 4vw, 40px)/1.15 Inter, sans-serif; }
+.login-intro { max-width: 500px; margin: 12px auto 28px; color: #b4b8b6; font-size: 14px; line-height: 1.6; }
+.login-roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; text-align: left; }
+.login-role { min-height: 188px; display: flex; gap: 16px; padding: 22px; border: 1px solid #ffffff2b; background: #151a18; text-align: left; transition: border-color .18s ease, background .18s ease; }
+.login-role:hover, .login-role:focus-visible { border-color: #d9bd55; background: #1a201c; }
+.login-role-icon { width: 42px; height: 42px; flex: 0 0 42px; display: grid; place-items: center; color: var(--gold); border: 1px solid #d7bd584d; background: #d7bd5814; }
+.login-role-icon svg { width: 20px; height: 20px; }
+.login-role-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; }
+.login-role-copy strong { color: #f4f1e8; font-size: 18px; }
+.login-role-copy small { color: #b4b8b6; font-size: 12px; line-height: 1.6; }
+.login-role-copy b { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; color: var(--gold); font-size: 11px; letter-spacing: .3px; }
+.login-role-copy b svg { width: 14px; height: 14px; }
+.login-demo-note { margin: 20px 0 0; padding: 12px 14px; border: 1px solid #d7bd5833; color: #c5c2b8; background: #d7bd580d; font-size: 11px; line-height: 1.6; text-align: left; }
 .public-hero {
   height: 374px;
   position: relative;

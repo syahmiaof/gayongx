@@ -18,6 +18,7 @@ import {
   MapPin,
   Menu,
   Network,
+  RotateCcw,
   Settings,
   ShieldCheck,
   User,
@@ -206,6 +207,9 @@ export function DashboardShell({
                 </button>
                 <button onClick={() => navigate(base + "/tetapan")}>
                   Tetapan
+                </button>
+                <button onClick={() => window.location.assign("/login")}>
+                  <RotateCcw /> Reset Demo
                 </button>
               </div>
             )}

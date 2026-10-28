@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, Menu, Search, X } from "lucide-react";
+import { ArrowRight, LogIn, Menu, Search, X } from "lucide-react";
 import { Logo } from "../common/Logo";
 import { SiteSearch } from "../ui/DemoUI";
 const links = [
@@ -52,6 +52,15 @@ export function PublicNavbar({
         >
           <Search />
         </button>
+        {currentPath !== "/login" && (
+          <button
+            className="button outline nav-login"
+            onClick={() => onNavigate("/login")}
+          >
+            <LogIn aria-hidden="true" />
+            Log Masuk
+          </button>
+        )}
         <button
           className="button red nav-join"
           onClick={() => onNavigate("/sertai")}

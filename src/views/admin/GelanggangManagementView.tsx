@@ -1,11 +1,22 @@
-import React, { useState } from 'react';
-import { GELANGGANG_LIST } from '../../data/seedData';
-import { GelanggangRecord } from '../../types';
-import { Building2, Plus, MapPin, Users, Phone, Clock, Eye, X } from 'lucide-react';
+import React, { useState } from "react";
+import { GELANGGANG_LIST } from "../../data/seedData";
+import { GelanggangRecord } from "../../types";
+import {
+  Building2,
+  Plus,
+  MapPin,
+  Users,
+  Phone,
+  Clock,
+  Eye,
+  X,
+} from "lucide-react";
 
 export const GelanggangManagementView: React.FC = () => {
   const [list, setList] = useState<GelanggangRecord[]>(GELANGGANG_LIST);
-  const [selectedGelanggang, setSelectedGelanggang] = useState<GelanggangRecord | null>(null);
+  const [selectedGelanggang, setSelectedGelanggang] =
+    useState<GelanggangRecord | null>(null);
+  const [demoMessage, setDemoMessage] = useState("");
 
   return (
     <div className="max-w-5xl mx-auto space-y-8 text-left">
@@ -18,19 +29,33 @@ export const GelanggangManagementView: React.FC = () => {
             Pengurusan Gelanggang Silat Seni Gayong
           </h1>
           <p className="text-xs text-stone-400 mt-1">
-            Pentauliahan tapak latihan, pelantikan ketua jurulatih gelanggang, dan pemantauan jumlah pelatih aktif.
+            Pentauliahan tapak latihan, pelantikan ketua jurulatih gelanggang,
+            dan pemantauan jumlah pelatih aktif.
           </p>
         </div>
 
         <button
           type="button"
-          onClick={() => alert('Borang permohonan pembukaan gelanggang baru dibuka.')}
+          onClick={() =>
+            setDemoMessage(
+              "Borang tauliah gelanggang belum disambungkan. Ini simulasi; tiada permohonan dihantar.",
+            )
+          }
           className="px-4 py-2 bg-[#297E62] hover:bg-[#20664f] text-white text-xs font-bold rounded-md shadow flex items-center gap-1.5 transition-colors shrink-0"
         >
           <Plus className="w-4 h-4" />
           <span>Tauliah Gelanggang Baharu</span>
         </button>
       </div>
+
+      {demoMessage && (
+        <p
+          className="border border-amber-800 bg-amber-950/40 p-3 text-xs text-amber-100"
+          role="status"
+        >
+          {demoMessage}
+        </p>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {list.map((gel) => (
@@ -44,7 +69,9 @@ export const GelanggangManagementView: React.FC = () => {
                   <span className="text-[10px] font-mono text-stone-400 uppercase">
                     {gel.cawanganName}
                   </span>
-                  <h3 className="text-lg font-bold text-white font-serif">{gel.name}</h3>
+                  <h3 className="text-lg font-bold text-white font-serif">
+                    {gel.name}
+                  </h3>
                 </div>
                 <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-950 text-emerald-300 border border-emerald-800">
                   {gel.status}
@@ -67,7 +94,9 @@ export const GelanggangManagementView: React.FC = () => {
                 </div>
 
                 <div className="text-[11px] text-stone-400">
-                  <div className="text-stone-500 uppercase font-mono text-[10px]">Jadual Mingguan:</div>
+                  <div className="text-stone-500 uppercase font-mono text-[10px]">
+                    Jadual Mingguan:
+                  </div>
                   <ul className="list-disc list-inside mt-0.5 space-y-0.5">
                     {gel.trainingSchedule.map((s, idx) => (
                       <li key={idx}>{s}</li>
@@ -78,7 +107,9 @@ export const GelanggangManagementView: React.FC = () => {
             </div>
 
             <div className="pt-3 border-t border-stone-800 flex items-center justify-between text-xs font-mono">
-              <span className="text-emerald-400 font-bold">{gel.activeStudentsCount} Murid Aktif</span>
+              <span className="text-emerald-400 font-bold">
+                {gel.activeStudentsCount} Murid Aktif
+              </span>
               <button
                 type="button"
                 onClick={() => setSelectedGelanggang(gel)}
@@ -111,19 +142,27 @@ export const GelanggangManagementView: React.FC = () => {
             <div className="space-y-3 text-xs text-stone-300">
               <div>
                 <span className="text-stone-500">Cawangan Naungan:</span>
-                <div className="font-semibold text-white">{selectedGelanggang.cawanganName}</div>
+                <div className="font-semibold text-white">
+                  {selectedGelanggang.cawanganName}
+                </div>
               </div>
               <div>
                 <span className="text-stone-500">Lokasi:</span>
-                <div className="text-stone-200">{selectedGelanggang.locationAddress}</div>
+                <div className="text-stone-200">
+                  {selectedGelanggang.locationAddress}
+                </div>
               </div>
               <div>
                 <span className="text-stone-500">Ketua Jurulatih:</span>
-                <div className="text-white font-bold">{selectedGelanggang.leadTrainer}</div>
+                <div className="text-white font-bold">
+                  {selectedGelanggang.leadTrainer}
+                </div>
               </div>
               <div>
                 <span className="text-stone-500">Tahun Ditubuhkan:</span>
-                <div className="font-mono text-stone-300">{selectedGelanggang.establishedYear}</div>
+                <div className="font-mono text-stone-300">
+                  {selectedGelanggang.establishedYear}
+                </div>
               </div>
             </div>
 

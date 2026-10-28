@@ -549,6 +549,12 @@
   .public-nav .search-toggle {
     margin-left: auto;
   }
+  .public-nav .nav-login,
+  .public-nav .nav-join {
+    min-height: 38px;
+    padding: 9px 12px;
+    font-size: 11px;
+  }
   .hero-copy h1 {
     font-size: 35px;
   }
@@ -1089,6 +1095,16 @@
   .nav-join {
     display: none;
   }
+  .public-nav .nav-login {
+    min-height: 34px;
+    padding: 7px 9px;
+    font-size: 10px;
+    gap: 5px;
+  }
+  .public-nav .nav-login svg {
+    width: 13px;
+    height: 13px;
+  }
   .public-nav .search-toggle {
     width: 31px;
     height: 31px;
@@ -1108,6 +1124,34 @@
   .public-search .site-search {
     width: 100%;
   }
+  .login-page {
+    min-height: calc(100vh - 111px);
+    padding: 72px 5% 28px;
+  }
+  .login-back {
+    top: 22px;
+    left: 5%;
+    font-size: 11px;
+  }
+  .login-panel {
+    padding: 26px 18px 20px;
+  }
+  .login-panel > .brand-lg img {
+    width: 54px;
+    height: 66px;
+  }
+  .login-roles {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .login-role {
+    min-height: 145px;
+    padding: 17px;
+  }
+  .login-intro {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
   .hero-content {
     display: block;
     padding: 27px 0 24px;
@@ -1116,6 +1160,7 @@
     font-size: clamp(27px, 7.5vw, 40px);
     letter-spacing: -0.6px;
     line-height: 1.08;
+    text-wrap: balance;
     margin: 12px 0 16px;
   }
   .eyebrow {
