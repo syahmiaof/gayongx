@@ -1,11 +1,29 @@
 import { AdminProgrammesView } from "./views/admin/AdminProgrammesView";
 import { MemberSettingsView } from "./views/member/MemberSettingsView";
-import React, { useState, useEffect } from "react";
+import { TuahBot } from "./components/ui/TuahBot";
+import { WelcomeIntro } from "./components/ui/WelcomeIntro";
+import React, { useCallback, useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 import { EcosystemBar, EcosystemMode } from "./components/layout/EcosystemBar";
 import { PublicNavbar } from "./components/layout/PublicNavbar";
 import { PublicFooter } from "./components/layout/PublicFooter";
 import { MemberLayout } from "./components/layout/MemberLayout";
 import { AdminLayout } from "./components/layout/AdminLayout";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+const WELCOME_SESSION_KEY = "pssgm-perak-welcome-seen";
+
+function shouldShowWelcome(path: string) {
+  if (path !== "/" || typeof window === "undefined") return false;
+  try {
+    return window.sessionStorage.getItem(WELCOME_SESSION_KEY) !== "1";
+  } catch {
+    return true;
+  }
+}
 
 // Public Views
 import { HomeView } from "./views/public/HomeView";
@@ -61,6 +79,109 @@ export default function App() {
   const [ecosystemMode, setEcosystemMode] = useState<EcosystemMode>(() =>
     getEcosystemModeFromPath(currentPath),
   );
+  const [showWelcome, setShowWelcome] = useState(() =>
+    shouldShowWelcome(currentPath),
+  );
+  const appMotionScope = useRef<HTMLDivElement>(null);
+
+  const completeWelcome = useCallback(() => {
+    try {
+      window.sessionStorage.setItem(WELCOME_SESSION_KEY, "1");
+    } catch {
+      // The intro still works when browser storage is unavailable.
+    }
+    setShowWelcome(false);
+  }, []);
+
+  useGSAP(
+    () => {
+      const scope = appMotionScope.current;
+      // The intro owns the first impression. Start page choreography only after
+      // it leaves so the hero does not animate behind the welcome screen.
+      if (!scope || showWelcome || currentPath === "/") return;
+
+      const media = gsap.matchMedia();
+      media.add(
+        { reduceMotion: "(prefers-reduced-motion: reduce)" },
+        ({ conditions }) => {
+          if (conditions?.reduceMotion) return;
+
+          if (currentPath === "/login") {
+            gsap.fromTo(
+              ".login-panel",
+              { autoAlpha: 0, y: 24, scale: 0.985 },
+              {
+                autoAlpha: 1,
+                y: 0,
+                scale: 1,
+                duration: 0.64,
+                ease: "power3.out",
+                clearProps: "transform,opacity,visibility",
+              },
+            );
+            gsap.fromTo(
+              ".login-role",
+              { autoAlpha: 0, y: 16 },
+              {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.48,
+                delay: 0.16,
+                stagger: 0.1,
+                ease: "power2.out",
+                clearProps: "transform,opacity,visibility",
+              },
+            );
+          } else if (currentPath === "/admin" || currentPath === "/portal") {
+            gsap.fromTo(
+              ".admin-hero, .member-welcome",
+              { autoAlpha: 0, y: 18 },
+              {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.58,
+                ease: "power2.out",
+                clearProps: "transform,opacity,visibility",
+              },
+            );
+            gsap.fromTo(
+              ".admin-metrics .metric-card, .member-summary-grid > *",
+              { autoAlpha: 0, y: 12 },
+              {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.42,
+                delay: 0.12,
+                stagger: 0.055,
+                ease: "power2.out",
+                clearProps: "transform,opacity,visibility",
+              },
+            );
+          } else if (currentPath !== "/") {
+            gsap.fromTo(
+              ".dashboard-main.inner-view > *, main > .max-w-5xl",
+              { autoAlpha: 0, y: 14 },
+              {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.42,
+                ease: "power2.out",
+                clearProps: "transform,opacity,visibility",
+              },
+            );
+          }
+        },
+        scope,
+      );
+
+      return () => media.revert();
+    },
+    {
+      scope: appMotionScope,
+      dependencies: [currentPath, showWelcome],
+      revertOnUpdate: true,
+    },
+  );
 
   // Sync browser url with history popstate
   useEffect(() => {
@@ -93,7 +214,7 @@ export default function App() {
   const renderPublicContent = () => {
     switch (currentPath) {
       case "/":
-        return <HomeView onNavigate={navigateTo} />;
+        return <HomeView onNavigate={navigateTo} animate={!showWelcome} />;
       case "/login":
         return <LoginView onNavigate={navigateTo} />;
       case "/sejarah":
@@ -124,7 +245,7 @@ export default function App() {
       case "/hubungi":
         return <ContactView />;
       default:
-        return <HomeView onNavigate={navigateTo} />;
+        return <HomeView onNavigate={navigateTo} animate={!showWelcome} />;
     }
   };
 
@@ -218,7 +339,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#090a0c] text-[#f4f4f5] flex flex-col font-sans selection:bg-[#D71F26] selection:text-white">
+    <div
+      ref={appMotionScope}
+      className="min-h-screen bg-[#090a0c] text-[#f4f4f5] flex flex-col font-sans selection:bg-[#D71F26] selection:text-white"
+    >
       {/* 1. Global Unified Ecosystem Switcher */}
       <EcosystemBar currentMode={ecosystemMode} />
 
@@ -250,6 +374,12 @@ export default function App() {
           {renderAdminContent()}
         </AdminLayout>
       )}
+
+      {ecosystemMode === "public" && currentPath !== "/login" && (
+        <TuahBot onNavigate={navigateTo} />
+      )}
+
+      {showWelcome && <WelcomeIntro onComplete={completeWelcome} />}
     </div>
   );
 }
