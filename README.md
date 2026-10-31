@@ -1,25 +1,38 @@
 <div align="center">
+  <img src="public/og-image.jpg" alt="GayongX — PSSGM Perak Digital Ecosystem" width="100%" />
+
   <h1>GayongX — PSSGM Perak Digital Ecosystem</h1>
   <p><strong>Connected digital ecosystem, cultural heritage portal & AI assistant for Silat Seni Gayong Perak.</strong></p>
 
   <p>
-    <a href="https://gayongx.syahmiaof.my"><img src="https://img.shields.io/badge/Demo-Live-60E1B5?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="Demo Live" /></a>
+    <a href="https://gayongx.syahmiaof.my"><img src="https://img.shields.io/badge/Demo-gayongx.syahmiaof.my-60E1B5?style=for-the-badge&logo=vercel&logoColor=60E1B5&labelColor=101713" alt="Demo Live" /></a>
     <a href="https://github.com/syahmiaof/gayongx"><img src="https://img.shields.io/badge/Source-GitHub-60E1B5?style=for-the-badge&logo=github&logoColor=60E1B5&labelColor=101713" alt="GitHub Source" /></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-60E1B5?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="License MIT" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-All_Rights_Reserved-60E1B5?style=for-the-badge&logoColor=60E1B5&labelColor=101713" alt="License All Rights Reserved" /></a>
     <a href="https://syahmiaof.my"><img src="https://img.shields.io/badge/Author-syahmiaof-60E1B5?style=for-the-badge&logo=readme&logoColor=60E1B5&labelColor=101713" alt="Author syahmiaof" /></a>
   </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/React_19-101713?style=for-the-badge&logo=react&logoColor=60E1B5" alt="React 19" />
+    <img src="https://img.shields.io/badge/TypeScript-101713?style=for-the-badge&logo=typescript&logoColor=60E1B5" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Vite-101713?style=for-the-badge&logo=vite&logoColor=60E1B5" alt="Vite" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS_v4-101713?style=for-the-badge&logo=tailwindcss&logoColor=60E1B5" alt="Tailwind CSS v4" />
+    <img src="https://img.shields.io/badge/GSAP_Motion-101713?style=for-the-badge&logo=greensock&logoColor=60E1B5" alt="GSAP Motion" />
+    <img src="https://img.shields.io/badge/Google_Gemini-101713?style=for-the-badge&logo=googlegemini&logoColor=60E1B5" alt="Google GenAI" />
+    <img src="https://img.shields.io/badge/Vercel-101713?style=for-the-badge&logo=vercel&logoColor=60E1B5" alt="Vercel" />
+  </p>
 </div>
-
-![GayongX public website](https://raw.githubusercontent.com/syahmiaof/syahmiaof/main/public/images/gayongx-website.jpg)
-
-> **Ecosystem Status**: Active development. The public portal, interactive UI, and Tuah AI assistant are fully implemented; wider enterprise modules (gelanggang fleet operations, attendance, and certified syllabus exams) follow a staged roadmap.
 
 ---
 
 ## 📌 Direction & Vision
 
-**GayongX** is an end-to-end digital ecosystem conceptualized for **Pertubuhan Silat Seni Gayong Malaysia (PSSGM) Negeri Perak**. It bridges centuries-old martial arts heritage with cutting-edge web engineering, responsive interaction design, and intelligent AI assistance:
+- **Functionality**: Statewide digital federation platform for Pertubuhan Silat Seni Gayong Malaysia (PSSGM) Negeri Perak connecting public heritage portals, multi-role gelanggang management, and the Tuah Bot AI syllabus mentor.
+- **Aesthetic Value**: Premium editorial martial arts presentation crafted with fluid GSAP choreographies, bespoke typography, and responsive multi-tier navigational architecture.
+- **Business Value**: Unifies disparate training dojos into a single digital administration hub, digitizing curriculum progress, coach accreditations, and athlete records across the state of Perak.
 
+> **Ecosystem Status**: Active deployment. The public portal, interactive UI, and Tuah AI assistant are fully operational; wider enterprise modules (gelanggang fleet operations, attendance, and certified syllabus exams) follow a staged roadmap.
+
+The platform architecture bridges centuries-old martial arts heritage with cutting-edge web engineering:
 1. **Public Identity & Heritage**: Introducing Silat Seni Gayong to the global audience with high-fidelity visuals, historical archives, and custom editorial design.
 2. **Tuah Bot AI Assistant**: Digital syllabus guide powered by Google's modern `@google/genai` SDK, offering instant answers on techniques, philosophy, and rank belt progressions.
 3. **Gelanggang & Operational Management**: Centralized member rosters, training schedules, and digital grading tracking.
@@ -76,44 +89,16 @@
 
 ---
 
-## 🚀 Getting Started
+## 🛡️ Continuous Integration & Quality Checks
 
-### Prerequisites
-- Node.js 20+
-- npm or compatible package manager
-
-### Installation & Run
-
-```bash
-# Clone the repository
-git clone https://github.com/syahmiaof/gayongx.git
-cd gayongx/pssgm-perak-digital-ecosystem
-
-# Install dependencies
-npm install
-
-# Run typechecking and linting
-npm run lint
-
-# Build production bundle
-npm run build
-
-# Start local development server
-npm run dev
-```
-
----
-
-## 🛡️ Verification & Quality Checks
-
-- **Lint / Typecheck**: `npm run lint` (`tsc --noEmit`)
-- **Production Build**: `npm run build` (`vite build`)
-- **Cross-Platform Clean**: `npm run clean` (`node -e "fs.rmSync('dist', {recursive:true,force:true}); fs.rmSync('server.js', {force:true})"`)
-- **Automated CI**: GitHub Actions workflow (`.github/workflows/ci.yml`) validates lint and production build on every push and PR to `main`.
+Platform stability is maintained through automated continuous integration workflows:
+- **Type Checking**: Strict TypeScript validation ensuring typed component contracts.
+- **Production Bundling**: Optimized assets built and tree-shaken with Vite.
+- **Continuous Integration**: GitHub Actions workflow (`.github/workflows/ci.yml`) validates codebase health on every push to `main`.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).  
-(c) 2026 Muhammad Syahmi ([syahmiaof](https://syahmiaof.my)).
+Copyright (c) 2026 Muhammad Syahmi ([syahmiaof](https://syahmiaof.my)). All rights reserved.  
+Proprietary source code created solely for demonstration and portfolio showcase purposes.
