@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "PSSGM Perak Digital Ecosystem — Cultural Heritage Web Portal, Gelanggang CMS, and Tuah AI Assistant",
   "author": "Muhammad Syahmi (syahmiaof)",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
